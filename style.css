@@ -1,0 +1,69 @@
+.main-block{
+    background: rgb(80, 80, 80);
+    width: 400px;
+    height: 400px;
+}
+/* .main-block::after{
+    width: 100px;
+    content: "";
+    height: 100px;
+    background: brown;
+    display: block;
+    position: absolute;
+    left: 500px;
+}
+
+.main-block:hover{
+    background: green;
+} */
+
+.first{
+    background: white;
+    width: 30%;
+    height: 60%;
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.second{
+    background: yellow;
+    position: relative;
+    display: block;
+    float: right;
+    top: 0;
+    width: 50%;
+    height: 30%;
+}
+
+.thrid{
+    background: green;
+    width: 100%;
+    height: 40%;
+    float: left;
+}
+.thrid::after{
+    height: 40%;
+    width: 40%;
+    background-color: #bbb;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    top: 0%;
+    left: 10%;
+    position: relative;
+}
+.thrid::before{
+    content: "";
+    background-color: #bbb;
+    display: block;
+    width: 40%;
+    height: 75%;
+    position: relative;
+    left: 60%;
+    top: -75%;
+}
+
+.thrid:hover{
+    background: greenyellow;
+}
