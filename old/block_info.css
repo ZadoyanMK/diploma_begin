@@ -1,3 +1,11 @@
+.background-block{
+    background: rgb(219, 217, 217);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
 .main-block{
     background: rgb(80, 80, 80);
     width: 400px;
@@ -19,12 +27,18 @@
 }
 
 .second{
-    background: yellow;
+    background: rgb(192, 192, 167);
+    transition-property: opacity;
+    transition-duration: 0.5s;
     position: relative;
     float: right;
     top: 0;
     width: 50%;
     height: 30%;
+}
+
+.second:hover{
+    opacity: 0.5;
 }
 
 .thrid{

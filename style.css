@@ -1,0 +1,72 @@
+.main{
+    background: url("images/layout.png") 100% 100% no-repeat;
+    background-size: 100%;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+}
+
+.arduino-nano, .servo, .raspberry, .solar-panel, .mq135, .dht11, .white-led-strip, 
+.relay, .l296 {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 35px;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+}
+
+.arduino-nano:hover, .servo:hover, .raspberry:hover, .solar-panel:hover, .mq135:hover, 
+.dht11:hover, .white-led-strip:hover, .relay:hover, .l296:hover {
+    opacity: 0.7;
+}
+
+.arduino-nano{
+    background: rgb(126, 126, 241);
+}
+.arduino-nano-second{
+    top: 12%; left: 1%;
+}
+.arduino-nano-first{
+    top: 2.5%; left: 1%;
+}
+
+.servo{
+    background: rgb(56, 56, 148);
+}
+.servo-first{
+    top: 23.3%; left: 1%;
+}
+.servo-second{
+    top: 35.2%; left: 1%;
+}
+
+.raspberry{
+    background: rgb(27, 133, 41);
+}
+
+.solar-panel{
+    background: rgb(6, 6, 51);
+    color: white;
+}
+
+.mq135{
+    background: rgb(31, 31, 31);
+    color: white;
+}
+
+.dht11{
+    background: rgb(161, 161, 255);
+}
+
+.white-led-strip{
+    background: rgb(112, 112, 134);
+}
+
+.relay{
+    background: rgb(183, 115, 238);
+}
+
+.l296{
+    background: rgb(153, 8, 8);
+}
