@@ -7,17 +7,19 @@
 }
 
 .arduino-nano, .servo, .raspberry, .solar-panel, .mq135, .dht11, .white-led-strip, 
-.relay, .l296 {
+.relay, .l296, .rgb-led-strip, .rip-sensor {
     display: block;
     position: relative;
     width: 70px;
     height: 35px;
     transition-property: opacity;
     transition-duration: 0.6s;
+    cursor: pointer;
 }
 
 .arduino-nano:hover, .servo:hover, .raspberry:hover, .solar-panel:hover, .mq135:hover, 
-.dht11:hover, .white-led-strip:hover, .relay:hover, .l296:hover {
+.dht11:hover, .white-led-strip:hover, .relay:hover, .l296:hover, .rgb-led-strip:hover,
+.rip-sensor:hover {
     opacity: 0.7;
 }
 
@@ -30,19 +32,25 @@
 .arduino-nano-first{
     top: 2.5%; left: 1%;
 }
+.arduino-nano-thrid{
+    top: -15%;
+    left: 85%;
+}
 
 .servo{
     background: rgb(56, 56, 148);
 }
 .servo-first{
-    top: 23.3%; left: 1%;
+    top: 15.3%; left: 1%;
 }
 .servo-second{
-    top: 35.2%; left: 1%;
+    top: 27.2%; left: 1%;
 }
 
 .raspberry{
     background: rgb(27, 133, 41);
+    top: 38.5%;
+    left: 1%;
 }
 
 .solar-panel{
@@ -69,4 +77,11 @@
 
 .l296{
     background: rgb(153, 8, 8);
+}
+
+.rip-sensor{
+    background: yellowgreen;
+}
+.rgb-led-strip{
+    background: aquamarine;
 }

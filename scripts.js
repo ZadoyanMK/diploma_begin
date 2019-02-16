@@ -20,4 +20,15 @@ $( document ).ready(function() {
         $('#exampleModalCenter .modal-body').html('test servo description')
         $('#exampleModalCenter').modal('show')
     });
+
+    $('.raspberry').tooltip(
+        {
+            delay: { "show": 100, "hide": 100 },
+            title: 'Raspberry Pi2', 
+        }
+    )
+    $(".raspberry").click(function(e){
+        $('#exampleModalCenter .modal-body').html('test raspberry description')
+        $('#exampleModalCenter').modal('show')
+    });
 });
