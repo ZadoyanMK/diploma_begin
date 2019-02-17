@@ -1,3 +1,4 @@
+/*main part*/
 .main{
     background: rgb(209, 209, 209);
     width: 700px;
@@ -18,9 +19,10 @@
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
-.arduino-nano, .rs485-ttl, .arduino-nano-rs485-block,
-.raspberry-rs485-block, .rasspberry, .rs485-usb, .wifi-ds18b20-block, .wifi, .ds18b20{
+.arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
+.solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
+.global-amperage
+{
     display: block;
     position: relative;
     transition-property: opacity;
@@ -28,7 +30,59 @@
     cursor: pointer;
     font-size: 8px;
 }
+.arduino-nano-rs485-block, .wifi-ds18b20-block, .solar-panel-a-v-module,
+.raspberry-rs485-block, .global-a-v-block
+{
+    display: block;
+    position: relative;
+}
 
+/*global amperage and voltage block*/
+.global-amperage, .global-voltage{
+    height: 100%;
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+.global-amperage{
+    background: grey;
+}
+.global-voltage{
+    background: rgb(165, 165, 165);
+}
+.global-a-v-block{
+    top: -60%;
+    left: 42%;
+    width: 12%;
+    height: 8%;
+}
+
+/*solar panel block*/
+.solar-panel{
+    background: black;
+    color: white;
+    height: 75%;
+}
+.solar-panel-amperage, .solar-panel-voltage{
+    height: 25%;
+    width: 50%;
+    float: left;
+}
+.solar-panel-amperage{
+    color: white;
+    background: rgb(73, 73, 73);
+}
+.solar-panel-voltage{
+    background: rgb(150, 150, 150);
+}
+.solar-panel-a-v-module{
+    width: 17%;
+    height: 40%;
+    left: 39%;
+    top: -100%;
+}
+
+/*wi-fi block*/
 .wifi{
     background: white;
     height: 60%;
@@ -38,7 +92,15 @@
     width: 70%;
     background: whitesmoke;
 }
-.rasspberry{
+.wifi-ds18b20-block{
+    width: 8%;
+    height: 8%;
+    left: 1%;
+    top: -36%;
+}
+
+/*raspbery block*/
+.raspberry{
     background: green;
     height: 70%;
 }
@@ -47,7 +109,14 @@
     height: 30%;
     width: 70%;
 }
+.raspberry-rs485-block{
+    width: 8%;
+    height: 15%;
+    left: 1%;
+    top: -7%;
+}
 
+/*arduino nano block*/
 .arduino-nano{
     background: rgb(126, 126, 241);
     height: 50%;
@@ -57,21 +126,6 @@
     height: 40%;
     width: 70%;
 }
-
-
-.wifi-ds18b20-block{
-    width: 8%;
-    height: 8%;
-    left: 1%;
-    top: -36%;
-}
-.raspberry-rs485-block{
-    width: 8%;
-    height: 15%;
-    left: 1%;
-    top: -7%;
-}
-
 .arduino-nano-rs485-block{
     width: 8%;
     height: 11%;

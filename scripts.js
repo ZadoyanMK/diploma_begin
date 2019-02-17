@@ -1,10 +1,12 @@
 var textBlockData = {
     '.arduino-nano': {
         'title': 'Arduino nano',
+        'image': 'nano.png',
         'description': 'arduino nano description'
     },
     '.rs485-ttl': {
         'title': 'rs485-ttl',
+        'image': 'nano.png',
         'description': 'rs485-ttl desc'
     },
 
