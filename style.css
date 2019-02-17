@@ -21,7 +21,7 @@
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
-.laser
+.laser, .window
 {
     display: block;
     position: relative;
@@ -50,6 +50,23 @@
     height: 8%;
     transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
+}
+.window{
+    background: tomato;
+    width: 10%;
+    height: 3%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+/*windows*/
+.window-first{
+    top: -110%;
+    left: 76.8%;
+}
+.window-second{
+    top: -107%;
+    left: 13%;
 }
 
 /*garage door block*/
@@ -99,7 +116,7 @@
     width: 69%;
     float: left;
     height: 100%;
-    background: yellow;
+    background: brown;
 }
 .main-door-servo-block .sg90-servo{
     width: 29%;
