@@ -21,7 +21,7 @@
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
-.laser, .window, .mg135-air, .pir, .rfid-rc522, .door
+.laser, .window, .mg135-air, .pir, .rfid-rc522, .door, .air-pipe, .dht22
 {
     display: block;
     position: relative;
@@ -34,7 +34,7 @@
 .arduino-nano-rs485-block, .wifi-ds18b20-block, .solar-panel-a-v-module,
 .raspberry-rs485-block, .global-a-v-block, .main-door-servo-block,
 .garage-input-block, .garage-door-block, .window-servo-pir-block, .servo-rfid-block,
-.door-s90-pir2
+.door-s90-pir2-block, .ventilation-block
 {
     display: block;
     position: relative;
@@ -102,12 +102,62 @@
 }
 .door{
     background: brown;
+    color: white;
 }
 .garage-door{
     background: yellow;
+    color: black;
+}
+.air-pipe{
+    background: blue;
+}
+.dht22{
+    background: wheat;
 }
 
-/*door s90 pir*/
+/* ventilation */
+.ventilation-block{
+    z-index: 0;
+    top: -144%;
+    left: 40.8%;
+    width: 10%;
+    height: 10%;
+}
+.air-pipe{
+    height: 25%;
+}
+.air-pipe-1{
+    width: 185%;
+    top: -460%;
+    left: -230%;
+}
+.air-pipe-2, .air-pipe-4, .dht22{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+.air-pipe-2{
+    top: -210%;
+    left: -235%;
+    width: 370%;
+}
+.air-pipe-3{
+    width: 288%;
+    left: -58%;
+    top: 50%;
+}
+.air-pipe-4{
+    width: 130%;
+    left: 160%;
+    top: -65%;
+}
+.dht22{
+    width: 30%;
+    height: 30%;
+    left: 210%;
+    top: -70%;
+}
+
+/* door s90 pir */
 .door-s90-pir2{
     top: -128.5%;
     left: 22.5%;
@@ -133,7 +183,8 @@
     left: -15%;
     float: left;
 }
-/*out of house*/
+
+/* out of house */
 .reley{
     top: -68%;
     left: 65%;
@@ -149,23 +200,23 @@
     left: 14%;
 }
 
-/*servo rfid block*/
+/* servo rfid block */
 .servo-rfid-block{
     top: -102.4%;
     left: 63%;
     width: 4%;
-    height: 2%;
+    height: 4%;
 }
 .servo-rfid-block .sg90-servo{
-    height: 100%;
+    height: 50%;
     width: 100%;
 }
 .rfid-rc522{
-    height: 100%;
+    height: 50%;
     width: 100%;
 }
 
-/*window servo pir block*/
+/* window servo pir block */
 .window-servo-pir-block{
     top: -120%;
     left: 74.5%;
@@ -192,7 +243,7 @@
     top: -100%;
 }
 
-/*windows*/
+/* windows */
 .window-second{
     top: -109%;
     left: 13.6%;
@@ -202,7 +253,7 @@
     height: 2%;
 }
 
-/*garage door block*/
+/* garage door block */
 .garage-input-block{
     top: -164%;
     width: 10%;
@@ -235,15 +286,16 @@
     left: -60%;
 }
 
-/*main door sg90*/
+/* main door sg90 */
 .main-door-servo-block{
     top: -78.5%;
     left: 44%;
     width: 8%;
     height: 2%;
 }
-.main-door{
+.main-door-servo-block .door{
     width: 69%;
+    height: 100%;
     float: left;
     height: 100%;
 }
@@ -251,11 +303,10 @@
     width: 29%;
     margin-right: 1%;
     height: 100%;
-    
     float: left;
 }
 
-/*global amperage and voltage block*/
+/* global amperage and voltage block */
 .global-amperage, .global-voltage{
     height: 100%;
     width: 48%;
@@ -269,7 +320,7 @@
     height: 6%;
 }
 
-/*solar panel block*/
+/* solar panel block */
 .solar-panel{
     height: 75%;
 }
@@ -286,7 +337,7 @@
     top: -100%;
 }
 
-/*wi-fi block*/
+/* wi-fi block */
 .wifi{
     height: 60%;
 }
@@ -301,7 +352,7 @@
     top: -36%;
 }
 
-/*raspbery block*/
+/* raspbery block */
 .raspberry{
     height: 70%;
 }
@@ -316,7 +367,7 @@
     top: -7%;
 }
 
-/*arduino nano block*/
+/* arduino nano block */
 .arduino-nano{
     height: 50%;
 }
