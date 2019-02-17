@@ -21,7 +21,7 @@
 }
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
-.global-amperage
+.global-amperage, .reley
 {
     display: block;
     position: relative;
@@ -35,6 +35,17 @@
 {
     display: block;
     position: relative;
+}
+
+/*reley*/
+.reley{
+    background: rgb(173, 197, 126);
+    top: -68%;
+    left: 65%;
+    width: 10%;
+    height: 8%;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
 }
 
 /*global amperage and voltage block*/
@@ -54,7 +65,7 @@
     top: -60%;
     left: 42%;
     width: 12%;
-    height: 8%;
+    height: 6%;
 }
 
 /*solar panel block*/
