@@ -21,7 +21,7 @@
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
-.laser, .window, .mg135-air, .pir
+.laser, .window, .mg135-air, .pir, .rfid-rc522
 {
     display: block;
     position: relative;
@@ -32,21 +32,82 @@
 }
 .arduino-nano-rs485-block, .wifi-ds18b20-block, .solar-panel-a-v-module,
 .raspberry-rs485-block, .global-a-v-block, .main-door-servo-block,
-.garage-input-block, .garage-door-block, .window-servo-pir-block
+.garage-input-block, .garage-door-block, .window-servo-pir-block, .servo-rfid-block
+
 {
     display: block;
     position: relative;
 }
 
-/*general*/
+/*colors(images)*/
+.arduino-nano{
+    background: rgb(126, 126, 241);
+}
+.rs485-ttl{
+    background: rgb(151, 0, 189);
+}
 .sg90-servo{
     background: rgb(255, 255, 159);
 }
 .pir{
     background: rebeccapurple;
 }
+.laser{
+    background: rgb(218, 132, 132);
+}
+.window{
+    background: tomato;
+}
+.garage-door{
+    background: yellow;
+}
+.laser-receiver{
+    background: red;
+}
+.main-door{
+    background: brown;
+}
+.global-amperage{
+    background: grey;
+}
+.global-voltage{
+    background: rgb(165, 165, 165);
+}
+.solar-panel-amperage{
+    color: white;
+    background: rgb(73, 73, 73);
+}
+.solar-panel-voltage{
+    background: rgb(150, 150, 150);
+}
+.solar-panel{
+    background: black;
+    color: white;
+}
+.wifi{
+    background: white;
+}
+.ds18b20{
+    background: whitesmoke;
+}
+.raspberry{
+    background: green;
+}
+.rs485-usb{
+    background: greenyellow;
+}
 .reley{
     background: rgb(173, 197, 126);
+}
+.mg135-air{
+    background: turquoise;
+}
+.rfid-rc522{
+    background: indianred;
+}
+
+/*out of house*/
+.reley{
     top: -68%;
     left: 65%;
     width: 10%;
@@ -55,14 +116,26 @@
     -webkit-transform: rotate(-10deg);
 }
 .mg135-air{
-    background: turquoise;
     width: 8%;
     height: 6%;
     top: -81%;
     left: 14%;
 }
-.window{
-    background: tomato;
+
+/*servo rfid block*/
+.servo-rfid-block{
+    top: -102.4%;
+    left: 63%;
+    width: 4%;
+    height: 2%;
+}
+.servo-rfid-block .sg90-servo{
+    height: 100%;
+    width: 100%;
+}
+.rfid-rc522{
+    height: 100%;
+    width: 100%;
 }
 
 /*window servo pir block*/
@@ -118,20 +191,17 @@
     left: 133%;
 }
 .garage-input-block .garage-door{
-    background: yellow;
     float: left;
     width: 160%;
     left: -21%;
 }
 .garage-input-block .laser-receiver{
-    background: red;
     float: left;
     width: 20%;
     height: 10%;
     left: 130%;
 }
 .garage-input-block .laser{
-    background: rgb(218, 132, 132);
     float: left;
     width: 20%;
     height: 10%;
@@ -149,7 +219,6 @@
     width: 69%;
     float: left;
     height: 100%;
-    background: brown;
 }
 .main-door-servo-block .sg90-servo{
     width: 29%;
@@ -166,12 +235,6 @@
     float: left;
     margin-left: 2%;
 }
-.global-amperage{
-    background: grey;
-}
-.global-voltage{
-    background: rgb(165, 165, 165);
-}
 .global-a-v-block{
     top: -60%;
     left: 42%;
@@ -181,8 +244,6 @@
 
 /*solar panel block*/
 .solar-panel{
-    background: black;
-    color: white;
     height: 75%;
 }
 .solar-panel-amperage, .solar-panel-voltage{
@@ -190,13 +251,7 @@
     width: 50%;
     float: left;
 }
-.solar-panel-amperage{
-    color: white;
-    background: rgb(73, 73, 73);
-}
-.solar-panel-voltage{
-    background: rgb(150, 150, 150);
-}
+
 .solar-panel-a-v-module{
     width: 17%;
     height: 40%;
@@ -206,13 +261,11 @@
 
 /*wi-fi block*/
 .wifi{
-    background: white;
     height: 60%;
 }
 .ds18b20{
     height: 40%;
     width: 70%;
-    background: whitesmoke;
 }
 .wifi-ds18b20-block{
     width: 8%;
@@ -223,11 +276,9 @@
 
 /*raspbery block*/
 .raspberry{
-    background: green;
     height: 70%;
 }
 .rs485-usb{
-    background: greenyellow;
     height: 30%;
     width: 70%;
 }
@@ -240,11 +291,9 @@
 
 /*arduino nano block*/
 .arduino-nano{
-    background: rgb(126, 126, 241);
     height: 50%;
 }
 .rs485-ttl{
-    background: rgb(151, 0, 189);
     height: 40%;
     width: 70%;
 }
