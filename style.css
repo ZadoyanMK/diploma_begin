@@ -1,41 +1,77 @@
 .main{
-    background: url("images/layout.png") 100% 100% no-repeat;
-    background-size: 100%;
-    width: 600px;
-    height: 400px;
+    background: rgb(209, 209, 209);
+    width: 700px;
+    height: 450px;
     position: absolute;
+    position: relative;
+    overflow: hidden;
 }
-
+.main:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(209, 209, 209) url("images/layout.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 .arduino-nano, .servo, .raspberry, .solar-panel, .mq135, .dht11, .white-led-strip, 
-.relay, .l296, .rgb-led-strip, .rip-sensor {
+.relay, .l296, .rgb-led-strip, .rip-sensor, .rs485-ttl, .arduino-nano-rs485-block {
     display: block;
     position: relative;
-    width: 70px;
-    height: 35px;
     transition-property: opacity;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     cursor: pointer;
 }
 
 .arduino-nano:hover, .servo:hover, .raspberry:hover, .solar-panel:hover, .mq135:hover, 
 .dht11:hover, .white-led-strip:hover, .relay:hover, .l296:hover, .rgb-led-strip:hover,
 .rip-sensor:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 .arduino-nano{
     background: rgb(126, 126, 241);
+    height: 50%;
 }
-.arduino-nano-second{
-    top: 12%; left: 1%;
+.rs485-ttl{
+    background: rgb(151, 0, 189);
+    height: 40%;
+    width: 70%;
 }
-.arduino-nano-first{
-    top: 2.5%; left: 1%;
+
+.arduino-nano-rs485-block{
+    width: 8%;
+    height: 11%;
 }
-.arduino-nano-thrid{
-    top: -15%;
-    left: 85%;
+.arduino-nano-rs485-block-1{
+    top: 5%; left: 1%;
 }
+.arduino-nano-rs485-block-2{
+    top: 15%; left: 1%;
+}
+.arduino-nano-rs485-block-3{
+    top: 30%; left: 1%;
+}
+.arduino-nano-rs485-block-4{
+    top: 45%; left: 1%;
+}
+.arduino-nano-rs485-block-5{
+    top: -40%; left: 90%;
+}
+.arduino-nano-rs485-block-6{
+    top: -30%; left: 90%;
+}
+.arduino-nano-rs485-block-7{
+    top: -14%; left: 90%;
+}
+.arduino-nano-rs485-block-8{
+    top: 1%; left: 90%;
+}
+
 
 .servo{
     background: rgb(56, 56, 148);
