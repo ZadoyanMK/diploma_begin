@@ -21,7 +21,7 @@
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
-.laser, .window, .mg135-air, .pir, .rfid-rc522
+.laser, .window, .mg135-air, .pir, .rfid-rc522, .door
 {
     display: block;
     position: relative;
@@ -30,10 +30,11 @@
     cursor: pointer;
     font-size: 8px;
 }
+
 .arduino-nano-rs485-block, .wifi-ds18b20-block, .solar-panel-a-v-module,
 .raspberry-rs485-block, .global-a-v-block, .main-door-servo-block,
-.garage-input-block, .garage-door-block, .window-servo-pir-block, .servo-rfid-block
-
+.garage-input-block, .garage-door-block, .window-servo-pir-block, .servo-rfid-block,
+.door-s90-pir2
 {
     display: block;
     position: relative;
@@ -58,14 +59,8 @@
 .window{
     background: tomato;
 }
-.garage-door{
-    background: yellow;
-}
 .laser-receiver{
     background: red;
-}
-.main-door{
-    background: brown;
 }
 .global-amperage{
     background: grey;
@@ -105,7 +100,39 @@
 .rfid-rc522{
     background: indianred;
 }
+.door{
+    background: brown;
+}
+.garage-door{
+    background: yellow;
+}
 
+/*door s90 pir*/
+.door-s90-pir2{
+    top: -128.5%;
+    left: 22.5%;
+    width: 15%;
+    height: 2%;
+}
+.door-s90-pir2 .door{
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.door-s90-pir2 .sg90-servo{
+    width: 20%;
+    height: 100%;
+    float: left;
+    top: -100%;
+    left: -15%;
+}
+.door-s90-pir2 .pir{
+    width: 20%;
+    height: 100%;
+    top: -100%;
+    left: -15%;
+    float: left;
+}
 /*out of house*/
 .reley{
     top: -68%;
