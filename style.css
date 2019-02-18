@@ -53,23 +53,31 @@
     position: relative;
 }
 
+.arduino-nano:before, .rs485-ttl:before, .raspberry:before, .rs485-usb:before,  .wifi:before, .ds18b20:before,
+.solar-panel:before, .solar-panel-voltage:before, .solar-panel-amperage:before, .global-voltage:before,
+.global-amperage:before, .reley:before, .main-door:before, .sg90-servo:before, .garage-door:before, .laser-receiver:before,
+.laser:before, .window:before, .mg135-air:before, .pir:before, .rfid-rc522:before, .door:before, .air-pipe:before, .dht22:before, .peltye:before,
+.dht11:before, .sun-light:before, .white-led-strip:before, .rgb-led-strip:before, .light-sensor:before
+{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: 50%;
+    background-position-y: -10%;
+}
+
 /*colors(images)*/
 .arduino-nano{
     background: rgb(126, 126, 241);
 }
 .arduino-nano:before{
-    content: "";
-    top: -51%;
-    left: 25%;
-    position: absolute;
-    width: 50%;
-    height: 220%;
+    top: -40%;
+    left: 14%;
+    width: 73%;
+    height: 170%;
     background: rgb(126, 126, 241) url("images/arduino_nano_terminal.jpg"); 
-
-    background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position-x: 50%;
-    background-position-y: -10%;
     
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -490,13 +498,14 @@
 /* arduino nano block */
 .arduino-nano{
     height: 50%;
+    width: 100%;
 }
 .rs485-ttl{
     height: 40%;
     width: 70%;
 }
 .arduino-nano-rs485-block{
-    width: 8%;
+    width: 6%;
     height: 11%;
 }
 .arduino-nano-rs485-block-1{
