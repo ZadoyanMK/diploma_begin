@@ -18,6 +18,18 @@
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+#img-description{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+#img-description img{
+    height: 100%;
+}
+#text-description{
+    float: left;
+}
+
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
@@ -44,6 +56,23 @@
 /*colors(images)*/
 .arduino-nano{
     background: rgb(126, 126, 241);
+}
+.arduino-nano:before{
+    content: "";
+    top: -51%;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 220%;
+    background: rgb(126, 126, 241) url("images/arduino_nano_terminal.jpg"); 
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: 50%;
+    background-position-y: -10%;
+    
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .rs485-ttl{
     background: rgb(151, 0, 189);
@@ -326,7 +355,7 @@
 
 /* windows */
 .window-second{
-    top: -105%;
+    top: -115%;
     left: 13.6%;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
