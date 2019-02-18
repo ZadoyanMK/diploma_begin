@@ -75,11 +75,11 @@
     background: rgb(126, 126, 241);
 }
 .arduino-nano:before{
-    top: -40%;
-    left: 14%;
-    width: 73%;
+    top: -35%;
+    left: 22%;
+    width: 57%;
     height: 170%;
-    background: rgb(126, 126, 241) url("images/arduino_nano_terminal.jpg"); 
+    background: rgb(126, 126, 241) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
     
     -webkit-transform: rotate(90deg);
@@ -94,7 +94,7 @@
     left: 18.367346%;
     width: 67%;
     height: 149%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(151, 0, 189) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 
     -webkit-transform: rotate(90deg);
@@ -107,7 +107,7 @@
 .sg90-servo:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(255, 255, 159) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -117,7 +117,7 @@
 .pir:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rebeccapurple url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -127,7 +127,7 @@
 .laser:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(218, 132, 132) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -137,7 +137,7 @@
 .window:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: tomato url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -147,7 +147,7 @@
 .laser-receiver:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: red url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -157,7 +157,7 @@
 .global-amperage:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: grey url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -167,7 +167,7 @@
 .global-voltage:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(165, 165, 165) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -177,7 +177,7 @@
 .solar-panel-amperage:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(73, 73, 73) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -187,7 +187,7 @@
 .solar-panel-voltage:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(150, 150, 150) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -197,7 +197,7 @@
 .solar-panel:before{
     width: 100%;
     height: 100%;
-    background: black url("images/solar_panel.png"); 
+    background: black url("images/scheme_images/solar-panel.png"); 
     background-size: 160% 100%;
     background-position: 50%;
 }
@@ -208,7 +208,7 @@
 .wifi:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: white url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -218,7 +218,7 @@
 .ds18b20:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: whitesmoke url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -228,7 +228,7 @@
 .raspberry:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: green url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -238,7 +238,7 @@
 .rs485-usb:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: greenyellow url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -248,7 +248,7 @@
 .reley:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(173, 197, 126) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -259,7 +259,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: turquoise url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -269,18 +269,17 @@
 .rfid-rc522:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: indianred url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
 .door{
     background: brown;
-    color: white;
 }
 .door:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: brown url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -290,7 +289,7 @@
 .garage-door:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: yellow url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -300,7 +299,7 @@
 .air-pipe:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: blue url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -310,7 +309,7 @@
 .dht22:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: wheat url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -320,7 +319,7 @@
 .peltye:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: fuchsia url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -330,7 +329,7 @@
 .dht11:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: darkcyan url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -340,7 +339,7 @@
 .sun-light{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: rgb(218, 218, 149) url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -350,7 +349,7 @@
 .white-led-strip:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: white url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -360,7 +359,7 @@
 .rgb-led-strip:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: darkolivegreen url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
@@ -370,7 +369,7 @@
 .light-sensor:before{
     width: 100%;
     height: 100%;
-    background: rgb(151, 0, 189) url("images/test.jpg"); 
+    background: darkorchid url("images/scheme_images/test.jpg"); 
     background-size: 100% 100%;
 }
 
