@@ -21,7 +21,8 @@
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
-.laser, .window, .mg135-air, .pir, .rfid-rc522, .door, .air-pipe, .dht22
+.laser, .window, .mg135-air, .pir, .rfid-rc522, .door, .air-pipe, .dht22, .peltye,
+.dht11, .sun-light, .white-led-strip, .rgb-led-strip, .light-sensor
 {
     display: block;
     position: relative;
@@ -34,7 +35,7 @@
 .arduino-nano-rs485-block, .wifi-ds18b20-block, .solar-panel-a-v-module,
 .raspberry-rs485-block, .global-a-v-block, .main-door-servo-block,
 .garage-input-block, .garage-door-block, .window-servo-pir-block, .servo-rfid-block,
-.door-s90-pir2-block, .ventilation-block
+.door-s90-pir2-block, .ventilation-block, .lights-block
 {
     display: block;
     position: relative;
@@ -114,11 +115,65 @@
 .dht22{
     background: wheat;
 }
+.peltye{
+    background: fuchsia;
+}
+.dht11{
+    background: darkcyan;
+}
+.sun-light{
+    background: rgb(218, 218, 149);
+}
+.white-led-strip{
+    background: white;
+}
+.rgb-led-strip{
+    background: darkolivegreen;
+}
+.light-sensor{
+    background: darkorchid;
+}
+
+/* lights block */
+.lights-block{
+    top: -123%;
+    left: 30%;
+    width: 10%;
+    height: 10%;
+}
+.lights-block .rgb-led-strip{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: 280%;
+    top: -400%;
+    left: -250%;
+    height: 10%;
+}
+.lights-block .white-led-strip{
+    width: 200%;
+    height: 10%;
+    top: -74%;
+    left: 90%;
+}
+.lights-block .light-sensor{
+    width: 25%;
+    height: 20%;
+}
+.lights-block .light-sensor-1{
+    top: -93.9%;
+    left: 314%;
+}
+.lights-block .light-sensor-2{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    top: -171%;
+    left: 306%;
+}
 
 /* ventilation */
 .ventilation-block{
     z-index: 0;
-    top: -144%;
+    top: -133%;
     left: 40.8%;
     width: 10%;
     height: 10%;
@@ -127,16 +182,16 @@
     height: 25%;
 }
 .air-pipe-1{
-    width: 185%;
-    top: -460%;
-    left: -230%;
+    width: 159%;
+    top: -463%;
+    left: -200%;
 }
 .air-pipe-2, .air-pipe-4, .dht22{
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
 }
 .air-pipe-2{
-    top: -210%;
+    top: -208%;
     left: -235%;
     width: 370%;
 }
@@ -148,35 +203,53 @@
 .air-pipe-4{
     width: 130%;
     left: 160%;
-    top: -65%;
+    top: -64%;
 }
 .dht22{
     width: 30%;
     height: 30%;
     left: 210%;
-    top: -70%;
+    top: -76%;
+}
+.peltye{
+    width: 40%;
+    height: 30%;
+    top: -615%;
+    left: -180%;
+}
+.ventilation-block .dht11{
+    width: 30%;
+    height: 30%;
+}
+.ventilation-block .dht11-1{
+    top: -598%;
+    left: -222%;
+}
+.ventilation-block .dht11-2{
+    top: -64%;
+    left: -58%;
 }
 
 /* door s90 pir */
-.door-s90-pir2{
-    top: -128.5%;
+.door-s90-pir2-block{
+    top: -125.5%;
     left: 22.5%;
     width: 15%;
     height: 2%;
 }
-.door-s90-pir2 .door{
+.door-s90-pir2-block .door{
     width: 60%;
     height: 100%;
     float: left;
 }
-.door-s90-pir2 .sg90-servo{
+.door-s90-pir2-block .sg90-servo{
     width: 20%;
     height: 100%;
     float: left;
     top: -100%;
     left: -15%;
 }
-.door-s90-pir2 .pir{
+.door-s90-pir2-block .pir{
     width: 20%;
     height: 100%;
     top: -100%;
@@ -186,7 +259,7 @@
 
 /* out of house */
 .reley{
-    top: -68%;
+    top: -65%;
     left: 65%;
     width: 10%;
     height: 8%;
@@ -196,13 +269,13 @@
 .mg135-air{
     width: 8%;
     height: 6%;
-    top: -81%;
+    top: -77%;
     left: 14%;
 }
 
 /* servo rfid block */
 .servo-rfid-block{
-    top: -102.4%;
+    top: -97.3%;
     left: 63%;
     width: 4%;
     height: 4%;
@@ -218,7 +291,7 @@
 
 /* window servo pir block */
 .window-servo-pir-block{
-    top: -120%;
+    top: -115%;
     left: 74.5%;
     width: 15%;
     height: 2%;
@@ -245,7 +318,7 @@
 
 /* windows */
 .window-second{
-    top: -109%;
+    top: -105%;
     left: 13.6%;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -255,16 +328,14 @@
 
 /* garage door block */
 .garage-input-block{
-    top: -164%;
+    top: -160.9%;
     width: 10%;
     height: 6%;
     left: 65%;
 }
-.garage-door-block{
-    top: -18%;
-}
 .garage-input-block .sg90-servo{
     width: 30%;
+    height: 45%;
     float: left;
     left: 133%;
 }
@@ -272,23 +343,26 @@
     float: left;
     width: 160%;
     left: -21%;
+    height: 55%;
 }
 .garage-input-block .laser-receiver{
     float: left;
     width: 20%;
-    height: 10%;
+    height: 45%;
     left: 130%;
+    top: 30%;
 }
 .garage-input-block .laser{
     float: left;
     width: 20%;
-    height: 10%;
+    height: 45%;
     left: -60%;
+    top: 30%;
 }
 
 /* main door sg90 */
 .main-door-servo-block{
-    top: -78.5%;
+    top: -73.5%;
     left: 44%;
     width: 8%;
     height: 2%;
@@ -314,27 +388,36 @@
     margin-left: 2%;
 }
 .global-a-v-block{
-    top: -60%;
+    top: -55%;
     left: 42%;
     width: 12%;
     height: 6%;
 }
 
 /* solar panel block */
+.solar-panel-a-v-module{
+    width: 17%;
+    height: 35%;
+    left: 39%;
+    top: -100%;
+}
 .solar-panel{
     height: 75%;
+    width: 100%;
+    float: left;
 }
 .solar-panel-amperage, .solar-panel-voltage{
     height: 25%;
     width: 50%;
     float: left;
 }
-
-.solar-panel-a-v-module{
-    width: 17%;
-    height: 40%;
-    left: 39%;
-    top: -100%;
+.sun-light{
+    width: 70%;
+    height: 2%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    top: 34%;
+    left: 80%;
 }
 
 /* wi-fi block */
