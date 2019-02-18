@@ -1,178 +1,151 @@
 var textBlockData = {
-    '.arduino-nano': {
+    'arduino-nano': {
         'title': 'Arduino nano',
-        'image': 'arduino_nano_terminal.jpg',
         'description': 'Nano desc!'
     },
-    '.rs485-ttl': {
+    'rs485-ttl': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.raspberry': {
+    'raspberry': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.rs485-usb': {
+    'rs485-usb': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.wifi': {
+    'wifi': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.ds18b20': {
+    'ds18b20': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.solar-panel': {
+    'solar-panel': {
         'title': 'Solar Panel',
-        'image': 'solar_panel.png',
         'description': 'Solar panel description!'
     },
-    '.solar-panel-voltage': {
+    'solar-panel-voltage': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.solar-panel-amperage': {
+    'solar-panel-amperage': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.global-voltage': {
+    'global-voltage': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.global-amperage': {
+    'global-amperage': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.reley': {
+    'reley': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.main-door': {
+    'sg90-servo': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.sg90-servo': {
+    'laser-receiver': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.garage-door': {
+    'laser': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.laser-receiver': {
+    'window': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.laser': {
+    'mg135-air': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.window': {
+    'pir': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.mg135-air': {
+    'rfid-rc522': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.pir': {
+    'door': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.rfid-rc522': {
+    'air-pipe': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.door': {
+    'dht22': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.air-pipe': {
+    'peltye': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.dht22': {
+    'dht11': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.peltye': {
+    'sun-light': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.dht11': {
+    'white-led-strip': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.sun-light': {
+    'rgb-led-strip': {
         'title': '',
-        'image': '',
-        'description': ''
-    },'.white-led-strip': {
-        'title': '',
-        'image': '',
         'description': ''
     },
-    '.rgb-led-strip': {
+    'light-sensor': {
         'title': '',
-        'image': '',
         'description': ''
     },
-    '.light-sensor': {
+    'garage-door': {
         'title': '',
-        'image': '',
         'description': ''
     },
 }
 
 $( document ).ready(function() {
     Object.keys(textBlockData).map( (ob) => {
-        $(ob).hover( (e) => {
-            $(ob).css({
+        $('.' + ob).hover( (e) => {
+            $('.' + ob).css({
                 opacity: 1
             });
         });
-        $(ob).mouseover( (e) => {
-            $(ob).css({
+        $('.' + ob).mouseover( (e) => {
+            $('.' + ob).css({
                 opacity: 0.6
             });
         });
-        $(ob).tooltip(
+        $('.' + ob).tooltip(
             {
                 delay: { "show": 100, "hide": 100 },
                 title: textBlockData[ob]['title'], 
             }
         );
-        $(ob).click(function(e){
-            $('#modalWindow #modalWindowTitle').html(textBlockData[ob]['title'])
-            $('#modalWindow #text-description').html(textBlockData[ob]['description'])
+        $('.' + ob).click(function(e){
+            $('#modalWindow #modalWindowTitle').html(textBlockData[ob]['title']);
+            $('#modalWindow #text-description').html(textBlockData[ob]['description']);
+
+            let type = '.jpg';
+            if (ob == 'solar-panel' || ob == 'ds18b20' || ob == 'pir'){
+                type = '.png';
+            }
+
             $('#modalWindow #img-description img').attr({
-                src: 'images/' + textBlockData[ob]['image'],
+                src: 'images/for_modal/' + ob + type,
                 alt: textBlockData[ob]['title'],
             })
             $('#modalWindow').modal('show')

@@ -24,7 +24,8 @@
     float: left;
 }
 #img-description img{
-    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 #text-description{
     float: left;
@@ -32,7 +33,7 @@
 
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
-.global-amperage, .reley, .main-door, .sg90-servo, .garage-door, .laser-receiver,
+.global-amperage, .reley, .sg90-servo, .garage-door, .laser-receiver,
 .laser, .window, .mg135-air, .pir, .rfid-rc522, .door, .air-pipe, .dht22, .peltye,
 .dht11, .sun-light, .white-led-strip, .rgb-led-strip, .light-sensor
 {
@@ -55,7 +56,7 @@
 
 .arduino-nano:before, .rs485-ttl:before, .raspberry:before, .rs485-usb:before,  .wifi:before, .ds18b20:before,
 .solar-panel:before, .solar-panel-voltage:before, .solar-panel-amperage:before, .global-voltage:before,
-.global-amperage:before, .reley:before, .main-door:before, .sg90-servo:before, .garage-door:before, .laser-receiver:before,
+.global-amperage:before, .reley:before, .sg90-servo:before, .garage-door:before, .laser-receiver:before,
 .laser:before, .window:before, .mg135-air:before, .pir:before, .rfid-rc522:before, .door:before, .air-pipe:before, .dht22:before, .peltye:before,
 .dht11:before, .sun-light:before, .white-led-strip:before, .rgb-led-strip:before, .light-sensor:before
 {
