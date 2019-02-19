@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal fade" id="modalWindow" tabindex="-1" role="dialog"
+        aria-labelledby="modalWindowTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWindowTitle">Block description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="img-description">
+                        <img src="" alt="">
+                    </div>
+                    <div id="text-description">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-1">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-2">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-3">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-4">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-5">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-6">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-7">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="arduino-nano-rs485-block arduino-nano-rs485-block-8">
+            <div class="arduino-nano"></div>
+            <div class="rs485-ttl"></div>
+        </div>
+        <div class="raspberry-rs485-block">
+            <div class="raspberry"></div>
+            <div class="rs485-usb"></div>
+        </div>
+
+        <div class="wifi-ds18b20-block">
+            <div class="wifi"></div>
+            <div class="ds18b20"></div>
+        </div>
+
+        <div class="solar-panel-a-v-module">
+            <div class="solar-panel-voltage"></div>
+            <div class="solar-panel-amperage"></div>
+            <div class="solar-panel"></div>
+            <div class="sun-light"></div>
+        </div>
+
+        <div class="global-a-v-block">
+            <div class="global-amperage"></div>
+            <div class="global-voltage"></div>
+        </div>
+
+        <div class="reley"></div>
+
+        <div class="main-door-servo-block">
+            <div class="sg90-servo"></div>
+            <div class="door"></div>
+        </div>
+        <div class="garage-input-block">
+            <div class="laser"></div>
+            <div class="laser-receiver"></div>
+            <div class="door garage-door"></div>
+            <div class="sg90-servo"></div>
+        </div>
+
+        <div class="mg135-air"></div>
+        
+        <div class="window-servo-pir-block">
+            <div class="pir"></div>
+            <div class="window"></div>
+            <div class="sg90-servo"></div>
+        </div>
+        
+        <div class="window window-second"></div>
+
+        <div class="servo-rfid-block">
+            <div class="rfid-rc522"></div>
+            <div class="sg90-servo"></div>
+        </div>
+
+        <div class="door-s90-pir2-block">
+            <div class="door"></div>
+            <div class="pir"></div>
+            <div class="sg90-servo"></div>
+        </div>
+
+        <div class="ventilation-block">
+            <div class="air-pipe air-pipe-1"></div>
+            <div class="air-pipe air-pipe-2"></div>
+            <div class="air-pipe air-pipe-3"></div>
+            <div class="air-pipe air-pipe-4"></div>
+            
+            <div class="dht22"></div>
+            <div class="peltye"></div>
+            <div class="dht11 dht11-1"></div>
+            <div class="dht11 dht11-2"></div>
+        </div>
+
+        <div class="lights-block">
+            <div class="white-led-strip"></div>
+            <div class="rgb-led-strip"></div>
+            <div class="light-sensor light-sensor-1"></div>
+            <div class="light-sensor light-sensor-2"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

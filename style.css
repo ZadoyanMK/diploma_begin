@@ -1,0 +1,741 @@
+.main{
+    background: rgb(233, 233, 233);
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    position: relative;
+    overflow: hidden;
+}
+.main:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(233, 233, 233) url("images/layout.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#img-description{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+#img-description img{
+    object-fit: cover;
+    width: 100%;
+}
+#text-description{
+    float: left;
+}
+
+.arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
+.solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
+.global-amperage, .reley, .sg90-servo, .garage-door, .laser-receiver,
+.laser, .window, .mg135-air, .pir, .rfid-rc522, .door, .air-pipe, .dht22, .peltye,
+.dht11, .sun-light, .white-led-strip, .rgb-led-strip, .light-sensor
+{
+    display: block;
+    position: relative;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+.arduino-nano-rs485-block, .wifi-ds18b20-block, .solar-panel-a-v-module,
+.raspberry-rs485-block, .global-a-v-block, .main-door-servo-block,
+.garage-input-block, .garage-door-block, .window-servo-pir-block, .servo-rfid-block,
+.door-s90-pir2-block, .ventilation-block, .lights-block
+{
+    display: block;
+    position: relative;
+}
+
+.arduino-nano:before, .rs485-ttl:before, .raspberry:before, .rs485-usb:before,  .wifi:before, .ds18b20:before,
+.solar-panel:before, .solar-panel-voltage:before, .solar-panel-amperage:before, .global-voltage:before,
+.global-amperage:before, .reley:before, .sg90-servo:before, .garage-door:before, .laser-receiver:before,
+.laser:before, .window:before, .mg135-air:before, .pir:before, .rfid-rc522:before, .door:before, .air-pipe:before, .dht22:before, .peltye:before,
+.dht11:before, .sun-light:before, .white-led-strip:before, .rgb-led-strip:before, .light-sensor:before
+{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: 50%;
+    background-position-y: -10%;
+
+    /* opacity: 0.8; */
+}
+
+/*colors(images)*/
+.arduino-nano{
+    /* background: rgb(126, 126, 241); */
+}
+.arduino-nano:before{
+    top: -35%;
+    left: 22%;
+    width: 57%;
+    height: 170%;
+    background: url("images/scheme_images/arduino-nano.png"); 
+    background-size: 100% 100%;
+    
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rs485-ttl{
+    /* background: rgb(151, 0, 189); */
+}
+.rs485-ttl:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/rs485-ttl.png"); 
+    background-size: 100% 100%;
+/* 
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); */
+}
+
+.sg90-servo{
+    background: blue;
+}
+/* .sg90-servo:before{
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 159) url("images/scheme_images/sg90-servo.jpg"); 
+    background-size: 100% 100%;
+} */
+
+.pir{
+    /* background: rebeccapurple; */
+}
+.pir:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/pir.png"); 
+    background-size: 100% 100%;
+}
+
+.laser{
+    background: black;
+}
+/* .laser:before{
+    width: 100%;
+    height: 100%;
+    background: rgb(218, 132, 132) url("images/scheme_images/laser.png"); 
+    background-size: 100% 100%;
+} */
+
+.window{
+    background: tomato;
+}
+.window:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/window.jpg"); 
+    background-size: 100% 100%;
+}
+
+.laser-receiver{
+    background: rgb(233, 171, 79);
+}
+/* .laser-receiver:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/laser-receiver.png"); 
+    background-size: 100% 100%;
+} */
+
+.global-amperage{
+    /* background: grey; */
+}
+.global-amperage:before{
+    width: 100%;
+    height: 100%;
+    background: grey url("images/scheme_images/global-amperage.png"); 
+    background-size: 100% 100%;
+}
+
+.global-voltage{
+    background: rgb(165, 165, 165);
+}
+.global-voltage:before{
+    width: 100%;
+    height: 100%;
+    background: rgb(165, 165, 165) url("images/scheme_images/global-voltage.png"); 
+    background-size: 100% 100%;
+}
+
+.solar-panel-amperage{
+    /* background: rgb(73, 73, 73); */
+}
+.solar-panel-amperage:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/solar-panel-amperage.png"); 
+    background-size: 100% 100%;
+}
+
+.solar-panel-voltage{
+    /* background: rgb(150, 150, 150); */
+}
+.solar-panel-voltage:before{
+    width: 100%;
+    height: 100%;
+    background: rgb(150, 150, 150) url("images/scheme_images/solar-panel-voltage.png"); 
+    background-size: 100% 100%;
+}
+
+.solar-panel{
+    background: black;
+}
+.solar-panel:before{
+    width: 100%;
+    height: 100%;
+    background: black url("images/scheme_images/solar-panel.png"); 
+    background-size: 160% 100%;
+    background-position: 50%;
+}
+
+.wifi{
+    /* background: white; */
+}
+.wifi:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/wifi.png"); 
+    background-size: 100% 100%;
+}
+
+.ds18b20{
+    /* background: whitesmoke; */
+}
+.ds18b20:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/ds18b20.png"); 
+    background-size: 100% 100%;
+}
+
+.raspberry{
+    /* background: green; */
+}
+.raspberry:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/raspberry.png"); 
+    background-size: 100% 100%;
+}
+
+.rs485-usb{
+    /* background: greenyellow; */
+}
+.rs485-usb:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/rs485-usb.png"); 
+    background-size: 100% 100%;
+}
+
+.reley{
+    /* background: rgb(173, 197, 126); */
+}
+.reley:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/reley.png"); 
+    background-size: 100% 100%;
+}
+
+.mg135-air{
+    /* background: turquoise; */
+}
+.mg135-air:before{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/mg135-air.png"); 
+    background-size: 100% 100%;
+}
+
+.rfid-rc522{
+    background: rgb(89, 129, 214);
+}
+/* .rfid-rc522:before{
+    width: 100%;
+    height: 100%;
+    background: indianred url("images/scheme_images/rfid-rc522.jpg"); 
+    background-size: 100% 100%;
+} */
+
+.door{
+    /* background: brown; */
+}
+.door:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/door.jpg"); 
+    background-size: 100% 100%;
+}
+
+.garage-door{
+    /* background: yellow; */
+}
+.garage-door:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/garage-door.png"); 
+    background-size: 100% 100%;
+}
+
+.air-pipe{
+    background: blue;
+}
+.air-pipe:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/air-pipe.jpg"); 
+    background-size: 100% 100%;
+}
+
+.dht22{
+    /* background: wheat; */
+}
+.dht22:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/dht22.png"); 
+    background-size: 100% 100%;
+}
+
+.peltye{
+    background: whitesmoke;
+}
+/* .peltye:before{
+    width: 100%;
+    height: 100%;
+    background: fuchsia url("images/scheme_images/peltye.jpg"); 
+    background-size: 100% 100%;
+} */
+
+.dht11{
+    /* background: darkcyan; */
+}
+.dht11:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/dht11.png"); 
+    background-size: 100% 100%;
+}
+
+.sun-light{
+    /* background: rgb(218, 218, 149); */
+}
+.sun-light{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/sun-light.jpg"); 
+    background-size: 100% 100%;
+}
+
+.white-led-strip{
+    /* background: white; */
+}
+.white-led-strip:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/white-led-strip.jpg"); 
+    background-size: 100% 100%;
+}
+
+.rgb-led-strip{
+    background: linear-gradient(to right, red , blue);
+}
+/* .rgb-led-strip:before{
+    width: 100%;
+    height: 100%;
+    background: darkolivegreen url("images/scheme_images/rgb-led-strip.jpg"); 
+    background-size: 100% 100%;
+} */
+
+.light-sensor{
+    /* background: darkorchid; */
+}
+.light-sensor:before{
+    width: 100%;
+    height: 100%;
+    background: url("images/scheme_images/light-sensor.png"); 
+    background-size: 100% 100%;
+}
+
+
+/* lights block */
+.lights-block{
+    top: -134%;
+    left: 30%;
+    width: 10%;
+    height: 10%;
+}
+.lights-block .rgb-led-strip{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: 280%;
+    top: -400%;
+    left: -250%;
+    height: 15%;
+}
+.lights-block .white-led-strip{
+    width: 200%;
+    height: 15%;
+    top: -74%;
+    left: 90%;
+}
+.lights-block .light-sensor{
+    width: 25%;
+    height: 20%;
+}
+.lights-block .light-sensor-1{
+    top: -106%;
+    left: 314%;
+}
+.lights-block .light-sensor-2{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    top: -178%;
+    left: 306%;
+}
+
+/* ventilation */
+.ventilation-block{
+    z-index: 0;
+    top: -144%;
+    left: 40.8%;
+    width: 10%;
+    height: 10%;
+}
+.air-pipe{
+    height: 25%;
+}
+.air-pipe-1{
+    width: 158%;
+    top: -463%;
+    left: -200%;
+}
+.air-pipe-2, .air-pipe-4, .dht22{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+.air-pipe-2{
+    top: -208%;
+    left: -235%;
+    width: 370%;
+}
+.air-pipe-3{
+    width: 288%;
+    left: -58%;
+    top: 50%;
+}
+.air-pipe-4{
+    width: 130%;
+    left: 160%;
+    top: -64%;
+}
+.dht22{
+    width: 30%;
+    height: 30%;
+    left: 210%;
+    top: -76%;
+}
+.peltye{
+    width: 20%;
+    height: 10%;
+    top: -604%;
+    left: -180%;
+}
+.ventilation-block .dht11{
+    width: 25%;
+    height: 24%
+}
+.ventilation-block .dht11-1{
+    top: -579%;
+    left: -222%;
+}
+.ventilation-block .dht11-2{
+    top: -45%;
+    left: -58%;
+}
+
+/* door s90 pir */
+.door-s90-pir2-block{
+    top: -136.5%;
+    left: 22.5%;
+    width: 15%;
+    height: 2%;
+}
+.door-s90-pir2-block .door{
+    width: 60%;
+    height: 80%;
+    float: left;
+}
+.door-s90-pir2-block .sg90-servo{
+    width: 14%;
+    height: 60%;
+    float: left;
+    top: -60%;
+    left: -10%;
+}
+.door-s90-pir2-block .pir{
+    width: 20%;
+    height: 100%;
+    top: -300%;
+    left: 10%;
+    float: left;
+
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+/* out of house */
+.reley{
+    top: -77%;
+    left: 72%;
+    width: 10%;
+    height: 8%;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+.mg135-air{
+    width: 8%;
+    height: 6%;
+    top: -88%;
+    left: 14%;
+}
+
+/* servo rfid block */
+.servo-rfid-block{
+    top: -108.5%;
+    left: 63%;
+    width: 2.2%;
+    height: 4%;
+}
+.servo-rfid-block .sg90-servo{
+    top: 40%;
+    left: -40%;
+    height: 30%;
+    width: 100%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+.rfid-rc522{
+    height: 30%;
+    left: 30%;
+    width: 150%;
+}
+
+/* window servo pir block */
+.window-servo-pir-block{
+    top: -125%;
+    left: 74.5%;
+    width: 15%;
+    height: 2%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+.window-servo-pir-block .window{
+    height: 75%;
+    width: 51%;
+    float: left;
+}
+.window-servo-pir-block .sg90-servo{
+    height: 60%;
+    width: 12%;
+    float: left;
+    top: -60%;
+}
+.window-servo-pir-block .pir{
+    height: 100%;
+    width: 20%;
+    float: left;
+    top: -100%;
+}
+
+/* windows */
+.window-second{
+    top: -115%;
+    left: 13.6%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    width: 9%;
+    height: 1.2%;
+}
+
+/* garage door block */
+.garage-input-block{
+    top: -171.9%;
+    width: 10%;
+    height: 6%;
+    left: 65%;
+}
+.garage-input-block .sg90-servo{
+    width: 20%;
+    height: 15%;
+    float: left;
+    top: 12%;
+    left: 145%;
+}
+.garage-input-block .garage-door{
+    float: left;
+    width: 160%;
+    left: -21%;
+    height: 55%;
+}
+.garage-input-block .laser-receiver{
+    float: left;
+    width: 20%;
+    height: 15%;
+    left: 130%;
+    top: 50%;
+}
+.garage-input-block .laser{
+    float: left;
+    width: 20%;
+    height: 15%;
+    left: -60%;
+    top: 50%;
+}
+
+/* main door sg90 */
+.main-door-servo-block{
+    top: -85.5%;
+    left: 44%;
+    width: 8%;
+    height: 2%;
+}
+.main-door-servo-block .door{
+    width: 69%;
+    top: 20%;
+    height: 60%;
+    float: left;
+}
+.main-door-servo-block .sg90-servo{
+    width: 29%;
+    top: -40%;
+    left: -10%;
+    margin-right: 1%;
+    height: 60%;
+    float: left;
+}
+
+/* global amperage and voltage block */
+.global-amperage, .global-voltage{
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin-left: 2%;
+}
+.global-a-v-block{
+    top: -65%;
+    left: 60%;
+    width: 12%;
+    height: 8%;
+}
+
+/* solar panel block */
+.solar-panel-a-v-module{
+    width: 17%;
+    height: 45%;
+    left: 39%;
+    top: -100%;
+}
+.solar-panel{
+    height: 80%;
+    width: 100%;
+    float: left;
+}
+.solar-panel-amperage, .solar-panel-voltage{
+    height: 20%;
+    width: 20%;
+    margin-left: 2%;
+    float: left;
+}
+.sun-light{
+    width: 70%;
+    height: 4%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    top: 30%;
+    left: 80%;
+}
+
+/* wi-fi block */
+.wifi{
+    height: 60%;
+    width: 70%;
+}
+.ds18b20{
+    height: 40%;
+    width: 60%;
+}
+.wifi-ds18b20-block{
+    width: 8%;
+    height: 8%;
+    left: 1%;
+    top: -36%;
+}
+
+/* raspbery block */
+.raspberry{
+    height: 50%;
+    width: 100%;
+}
+.rs485-usb{
+    height: 20%;
+    width: 60%;
+}
+.raspberry-rs485-block{
+    width: 8%;
+    height: 15%;
+    left: 1%;
+    top: -7%;
+}
+
+/* arduino nano block */
+.arduino-nano{
+    height: 50%;
+    width: 100%;
+}
+.rs485-ttl{
+    height: 20%;
+    width: 60%;
+}
+.arduino-nano-rs485-block{
+    width: 6%;
+    height: 11%;
+}
+.arduino-nano-rs485-block-1{
+    top: 5%; left: 1%;
+}
+.arduino-nano-rs485-block-2{
+    top: 8%; left: 1%;
+}
+.arduino-nano-rs485-block-3{
+    top: 12%; left: 1%;
+}
+.arduino-nano-rs485-block-4{
+    top: 18%; left: 1%;
+}
+.arduino-nano-rs485-block-5{
+    top: -40%; left: 90%;
+}
+.arduino-nano-rs485-block-6{
+    top: -30%; left: 90%;
+}
+.arduino-nano-rs485-block-7{
+    top: -14%; left: 90%;
+}
+.arduino-nano-rs485-block-8{
+    top: 1%; left: 90%;
+}
