@@ -2,7 +2,6 @@
     background: rgb(233, 233, 233);
     width: 700px;
     height: 450px;
-    position: absolute;
     position: relative;
     overflow: hidden;
 }
@@ -20,7 +19,7 @@
 }
 #img-description{
     width: 200px;
-    height: 200px;
+    /* height: 200px; */
     float: left;
 }
 #img-description img{
@@ -28,7 +27,7 @@
     width: 100%;
 }
 #text-description{
-    float: left;
+    /* float: left; */
 }
 
 .arduino-nano, .rs485-ttl, .raspberry, .rs485-usb,  .wifi, .ds18b20,
@@ -678,8 +677,8 @@
     margin-left: 2%;
 }
 .global-a-v-block{
-    top: -65%;
-    left: 60%;
+    top: -66%;
+    left: 63%;
     width: 12%;
     height: 8%;
 }
