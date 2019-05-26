@@ -1,4 +1,8 @@
 var textBlockData = {
+    'flower': {
+        'title': 'Flower',
+        'description': 'this is flower'
+    },
     'arduino-nano': {
         'title': 'Arduino nano',
         'description': 'Nano desc!'
@@ -140,7 +144,11 @@ $( document ).ready(function() {
             $('#modalWindow #text-description').html(textBlockData[ob]['description']);
 
             let type = '.jpg';
-            if (ob == 'solar-panel' || ob == 'ds18b20' || ob == 'pir'){
+            const png_images = [
+                'solar-panel', 'ds18b20', 'pir', 'flower'
+            ];
+
+            if ($.inArray(ob, png_images) != -1){
                 type = '.png';
             }
 
