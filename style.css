@@ -35,7 +35,8 @@
 .solar-panel, .solar-panel-voltage, .solar-panel-amperage, .global-voltage,
 .global-amperage, .reley, .sg90-servo, .garage-door, .laser-receiver,
 .laser, .window, .mg135-air, .pir, .rfid-rc522, .door, .air-pipe, .dht22, .peltye,
-.dht11, .sun-light, .white-led-strip, .rgb-led-strip, .light-sensor, .flower
+.dht11, .sun-light, .white-led-strip, .rgb-led-strip, .light-sensor, .flower,
+.ventilation-recuperaptor
 {
     display: block;
     position: relative;
@@ -58,7 +59,8 @@
 .solar-panel:before, .solar-panel-voltage:before, .solar-panel-amperage:before, .global-voltage:before,
 .global-amperage:before, .reley:before, .sg90-servo:before, .garage-door:before, .laser-receiver:before,
 .laser:before, .window:before, .mg135-air:before, .pir:before, .rfid-rc522:before, .door:before, .air-pipe:before, .dht22:before, .peltye:before,
-.dht11:before, .sun-light:before, .white-led-strip:before, .rgb-led-strip:before, .light-sensor:before, .flower:before
+.dht11:before, .sun-light:before, .white-led-strip:before, .rgb-led-strip:before, .light-sensor:before, .flower:before,
+.ventilation-recuperaptor:before
 {
     content: "";
     position: absolute;
@@ -73,7 +75,7 @@
 /*colors(images)*/
 .flower{
     top: -129%;
-    left: 82%;
+    left: 75%;
     width: 20%;
     height: 9%;
 }
@@ -314,7 +316,12 @@
     background: url("images/scheme_images/air-pipe.jpg"); 
     background-size: 100% 100%;
 }
+.ventilation-recuperaptor{
+    background: rgb(167, 145, 145);
+}
+/* .ventilation-recuperaptor:before{
 
+} */
 .dht22{
     /* background: wheat; */
 }
@@ -437,17 +444,23 @@
 .air-pipe{
     height: 25%;
 }
-.air-pipe-1{
-    width: 158%;
+.ventilation-recuperaptor{
+    width: 156%;
+    height: 24%;
     top: -463%;
     left: -200%;
 }
+/* .air-pipe-1{
+    width: 158%;
+    top: -463%;
+    left: -200%;
+} */
 .air-pipe-2, .air-pipe-4, .dht22{
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
 }
 .air-pipe-2{
-    top: -208%;
+    top: -212%;
     left: -235%;
     width: 370%;
 }
@@ -478,7 +491,7 @@
     height: 24%
 }
 .ventilation-block .dht11-1{
-    top: -551%;
+    top: -546%;
     left: -205%;
 }
 .ventilation-block .dht11-2{
@@ -522,12 +535,12 @@
 
 /* out of house */
 .reley{
-    top: -77%;
-    left: 72%;
-    width: 10%;
+    top: -160%;
+    left: 9%;
+    width: 8%;
     height: 8%;
-    transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
+    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
 }
 .mg135-air{
     width: 8%;
@@ -764,5 +777,5 @@
     top: -14%; left: 90%;
 }
 .arduino-nano-rs485-block-8{
-    top: -8%; left: 90%;
+    top: -2%; left: 90%;
 }

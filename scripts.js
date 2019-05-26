@@ -87,6 +87,10 @@ var textBlockData = {
         'title': '',
         'description': ''
     },
+    'ventilation-recuperaptor': {
+        'title': '',
+        'description': ''
+    },
     'dht22': {
         'title': '',
         'description': ''
