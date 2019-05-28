@@ -14,6 +14,8 @@ Don`t forget to copy scripts in scripts.js.
 
 ## Additional info
 
+If you want to change size of image, change it, including proportionals, in style.css at ".main" styles.
+
 Expamples, how correctly modal and tooltip, you can find hovering to solar panel or to arduino nano.
 
 In the scripts.js you can find textBlockData object. This object contains all blocks with modules. 
