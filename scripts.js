@@ -56,7 +56,7 @@ const textBlockData = {
         },
         'ua': {
             'title': 'Raspberry PI',
-            'description': "Raspberry Pi побудований на системі-на-чипі (SoC) Broadcom BCM2835, яка включає в себе процесор ARM із тактовою частотою 700 МГц, графічний процесор VideoCore IV, і 512 чи 256 мегабайтів[3] оперативної пам'яті. Твердий диск відсутній, натомість використовується SD карта. Така апаратна начинка дозволяє відтворювати відео формату H.264 в роздільній здатності 1080p, і запускати комп'ютерні ігри на зразок Quake III Arena. "
+            'description': "Raspberry Pi побудований на системі-на-чипі (SoC) Broadcom BCM2835, яка включає в себе процесор ARM із тактовою частотою 700 МГц, графічний процесор VideoCore IV, і 512 чи 256 мегабайтів  оперативної пам'яті. Твердий диск відсутній, натомість використовується SD карта. Така апаратна начинка дозволяє відтворювати відео формату H.264 в роздільній здатності 1080p, і запускати комп'ютерні ігри на зразок Quake III Arena. "
         }
     },
     'rs485-usb': {
@@ -92,71 +92,31 @@ const textBlockData = {
     'solar-panel': {
         'en': {
             'title': 'Solar panel',
-            'description': ''
+            'description': "Solar panel - a type of panel panels for the absorption of energy from sunlight and its transformation into electric or thermal."
         },
         'ua': {
             'title': 'Сонячна панель',
-            'description': ''
-        }
-    },
-    'solar-panel-voltage': {
-        'en': {
-            'title': '',
-            'description': ''
-        },
-        'ua': {
-            'title': '',
-            'description': ''
-        }
-    },
-    'solar-panel-amperage': {
-        'en': {
-            'title': '',
-            'description': ''
-        },
-        'ua': {
-            'title': '',
-            'description': ''
-        }
-    },
-    'global-voltage': {
-        'en': {
-            'title': '',
-            'description': ''
-        },
-        'ua': {
-            'title': '',
-            'description': ''
-        }
-    },
-    'global-amperage': {
-        'en': {
-            'title': '',
-            'description': ''
-        },
-        'ua': {
-            'title': '',
-            'description': ''
+            'description': 'Сонячна панель — тип збірних панелей для поглинання енергії сонячних променів та її перетворення у електричну чи теплову.'
         }
     },
     'reley': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Reley',
+            'description': 'A relay is an electrically operated switch. Many relays use an electromagnet to mechanically operate a switch, but other operating principles are also used, such as solid-state relays. Relays are used where it is necessary to control a circuit by a separate low-power signal, or where several circuits must be controlled by one signal. The first relays were used in long distance telegraph circuits as amplifiers: they repeated the signal coming in from one circuit and re-transmitted it on another circuit. Relays were used extensively in telephone exchanges and early computers to perform logical operations.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Реле',
+            'description': 'Реле — пристрій, у якому за досягнення певного значення вхідної величини X, вихідна величина Y змінюється стрибкоподібно та приймає скінченне число значень. Найчастіше, це автоматичний пристрій, який реагує на зміни параметру (температури, тиску, освітленості тощо) і який, у разі досягнення параметром заданої величини, замикає або розмикає електричне коло.'
         }
     },
     'sg90-servo': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'SG90 servo',
+            'description': 'A servomotor is a rotary actuator or linear actuator that allows for precise control of angular or linear position, velocity and acceleration.  It consists of a suitable motor coupled to a sensor for position feedback. It also requires a relatively sophisticated controller, often a dedicated module designed specifically for use with servomotors.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'SG90 servo',
+            'description': "Сервопри́вод (також серводвигун, сервомеханізм) — це пристрій в системах автоматичного регулювання або дистанційного керування, що за рахунок енергії допоміжного джерела здійснює механічне переміщення регулюючого органу відповідно до отримуваних від системи керування сигналів.  Тобто, міняється положення регулюючого органа (важеля, кнопки, перемикача) — потік матеріалу або енергії, що поступає на об'єкт дії, міняється і в результаті виконується дія на робочі машини або механізми, змінюється стан робочого об'єкта."
         }
     },
     // 'laser-receiver': {
@@ -181,152 +141,194 @@ const textBlockData = {
     // },
     'window': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Window',
+            'description': 'This is window!'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Вікно',
+            'description': 'Це вікно!'
         }
     },
     'mg135-air': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'MG135-air',
+            'description': 'This is air filter. A particulate air filter is a device composed of fibrous or porous materials which removes solid particulates such as dust, pollen, mold, and bacteria from the air. Filters containing an adsorbent or catalyst such as charcoal (carbon) may also remove odors and gaseous pollutants such as volatile organic compounds or ozone.[1] Air filters are used in applications where air quality is important, notably in building ventilation systems and in engines.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'MG135-air',
+            'description': 'Це повітряний фільтер. Повітряний фільтр — фільтр для очищення повітря від завислих частинок в побуті та на виробництві. Фільтри, які застосовуються для очистки газів, класифікують за різними ознаками: за формою фільтрувальних елементів, способом підводу запилених газів, формою корпусу, призначенню та ін. Найбільш загальною є класифікація за матеріалом, з якого виготовлена фільтрувальна перегородка. За цією класифікацією розрізняють:'
         }
     },
     'pir': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'PIR',
+            'description': 'A passive infrared sensor (PIR sensor) is an electronic sensor that measures infrared (IR) light radiating from objects in its field of view. They are most often used in PIR-based motion detectors. PIR sensors are commonly used in security alarms and automatic lighting applications. PIR sensors detect general movement, but do not give information on who or what moved. For that purpose, an active IR sensor is required.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'PIR',
+            'description': "Пасивний інфрачервоний датчик (датчик PIR) - це електронний датчик, який вимірює інфрачервоне (ІЧ) світло, що випромінюється від об'єктів у його зорі. Найчастіше вони використовуються в ПІР-детекторах руху. Датчики PIR зазвичай використовуються в охоронних сигналізаціях і автоматичному освітленні. Датчики PIR виявляють загальний рух, але не дають інформації про те, хто або що перемістився. Для цього потрібний активний ІЧ-датчик."
         }
     },
     'rfid-rc522': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'RFID-RC522',
+            'description': 'The RC522 RFID Reader module is designed to create a 13.56MHz electromagnetic field that it uses to communicate with the RFID tags (ISO 14443A standard tags). The reader can communicate with a microcontroller over a 4-pin Serial Peripheral Interface (SPI) with a maximum data rate of 10Mbps. It also supports communication over I2C and UART protocols.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'RFID-RC522',
+            'description': "Модуль зчитувача RC522 RFID призначений для створення 13,56 МГц електромагнітного поля, яке він використовує для зв'язку з мітками RFID (стандартні мітки ISO 14443A). Зчитувач може спілкуватися з мікроконтролером через 4-контактний послідовний периферійний інтерфейс (SPI) з максимальною швидкістю передачі даних 10 Мбіт / с. Він також підтримує зв'язок через протоколи I2C і UART."
         }
     },
     'door': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Door',
+            'description': 'This is door!'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Двері',
+            'description': 'Це двері!'
         }
     },
     'air-pipe': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Air pipe',
+            'description': 'Ventilation is the intentional introduction of outdoor air into a space and is mainly used to control indoor air quality by diluting and displacing indoor pollutants; it can also be used for purposes of thermal comfort or dehumidification.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Вентиляція',
+            'description': 'Вентиля́ція (від лат. ventilatio — провітрювання) — створення обміну повітря в приміщенні для видалення надлишків теплоти, вологи, шкідливих та інших речовин з метою забезпечення допустимих метеорологічних, санітарно-гігієнічних, технологічних умов повітряного середовища.'
         }
     },
     'ventilation-recuperaptor': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Recuperator',
+            'description': 'A recuperator is a special purpose counter-flow energy recovery heat exchanger positioned within the supply and exhaust air streams of an air handling system, or in the exhaust gases of an industrial process, in order to recover the waste heat. Generally, they are used to extract heat from the exhaust and use it to preheat air entering the combustion system. In this way they use waste energy to heat the air, offsetting some of the fuel, and thereby improves the energy efficiency of the system as a whole.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Рекуператор',
+            'description': 'Рекуператор (лат. recuperator — одержує назад, той що повертає) — теплообмінник поверхневого типу, який використовує теплоту із стороннього джерела, скажімо, вихлопних газів двигуна. У рекуператорі теплообмін здійснюється безперервним чином через стінку, яка розділяє теплоносії. На відміну від регенератора, траси потоків теплоносіїв у рекуператорі не змінюються. Рекуператори розрізняють за схемою відносного руху теплоносіїв — протиточні, прямоточні та ін; за конструкцією — трубчасті, пластинчасті, ребристі та ін.; за призначенням — із підігріванням повітря, газу, рідин, із випаровуваням, конденсатори тощо.'
         }
     },
     'dht22': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'DHT22',
+            'description': "The DHT22 is a basic, low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed). It's fairly simple to use, but requires careful timing to grab data. The only real downside of this sensor is you can only get new data from it once every 2 seconds, so when using our library, sensor readings can be up to 2 seconds old."
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'DHT22',
+            'description': "DHT22 - це базовий, недорогий цифровий датчик температури та вологості. Він використовує ємнісний датчик вологості і термістор для вимірювання навколишнього повітря, і випрямляє цифровий сигнал на виводі даних (не потрібні аналогові входи). Він досить простий у використанні, але вимагає ретельної синхронізації даних. Єдиним реальним недоліком цього датчика є те, що ви можете отримувати нові дані лише раз на 2 секунди, тому при використанні нашої бібліотеки показання датчиків можуть становити до 2 секунд."
         }
     },
     'peltye': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'The Peltier element',
+            'description': 'The Peltier element is a thermoelectric converter, whose principle of action is based on the Peltier effect - the occurrence of temperature differences in the flow of electric current. In English literature, the elements of the Peltier are denoted by the TEC (from the English Thermoelectric Cooler - thermoelectric cooler).'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Елемент Пельтьє',
+            'description': 'Елемент Пельтьє — це термоелектричний перетворювач, принцип дії якого базується на ефекті Пельтьє — виникненні різниці температур при протіканні електричного струму. В англомовній літературі елементи Пельтьє позначаються TEC (від англ. Thermoelectric Cooler — Термоелектричний охолоджувач).'
         }
     },
     'dht11': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'DHT11',
+            'description': 'The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed). Its fairly simple to use, but requires careful timing to grab data.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'DHT11',
+            'description': 'DHT11 - це базовий, дешевий цифровий датчик температури і вологості. Він використовує ємнісний датчик вологості і термістор для вимірювання навколишнього повітря, і випрямляє цифровий сигнал на виводі даних (не потрібні аналогові входи). Досить простий у використанні, але вимагає ретельної синхронізації даних.'
         }
     },
     'sun-light': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'White led strip',
+            'description': 'An LED strip light (also known as an LED tape or ribbon light) is a flexible circuit board populated by surface mounted light-emitting diodes (SMD LEDs) and other components that usually comes with an adhesive backing. Traditionally, strip lights had been used solely in accent lighting, backlighting, task lighting, and decorative lighting applications. Increased luminous efficacy and higher-power SMDs have allowed LED strip lights to be used in applications such as high brightness task lighting, fluorescent and halogen lighting fixture replacements, indirect lighting applications, Ultra Violet inspection during manufacturing processes, set and costume design, and even growing plants.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Біла світлодіодна стрічка',
+            'description': '\"Світлодіодна стрічка\" - джерело світла, зібране на основі світлодіодів. Являє собою гнучку друковану (монтажну) плату, на якій рівновіддалено один від одного розташовані світлодіоди. Зазвичай ширина стрічки становить 8 або 10 мм, товщина (зі світлодіодами) 2-3 мм. При виготовленні стрічка намотується в рулони відрізками по 5 м. Для обмеження струму через світлодіоди електричну схему стрічки вводяться струмообмежувальні (резистори), які також монтуються на стрічці.'
         }
     },
     'white-led-strip': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'White led strip',
+            'description': 'An LED strip light (also known as an LED tape or ribbon light) is a flexible circuit board populated by surface mounted light-emitting diodes (SMD LEDs) and other components that usually comes with an adhesive backing. Traditionally, strip lights had been used solely in accent lighting, backlighting, task lighting, and decorative lighting applications. Increased luminous efficacy and higher-power SMDs have allowed LED strip lights to be used in applications such as high brightness task lighting, fluorescent and halogen lighting fixture replacements, indirect lighting applications, Ultra Violet inspection during manufacturing processes, set and costume design, and even growing plants.'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Біла світлодіодна стрічка',
+            'description': '\"Світлодіодна стрічка\" - джерело світла, зібране на основі світлодіодів. Являє собою гнучку друковану (монтажну) плату, на якій рівновіддалено один від одного розташовані світлодіоди. Зазвичай ширина стрічки становить 8 або 10 мм, товщина (зі світлодіодами) 2-3 мм. При виготовленні стрічка намотується в рулони відрізками по 5 м. Для обмеження струму через світлодіоди електричну схему стрічки вводяться струмообмежувальні (резистори), які також монтуються на стрічці.'
         }
     },
     'rgb-led-strip': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Color (RGB) led strip',
+            'description': 'An LED strip light (also known as an LED tape or ribbon light) is a flexible circuit board populated by surface mounted light-emitting diodes (SMD LEDs) and other components that usually comes with an adhesive backing. Traditionally, strip lights had been used solely in accent lighting, backlighting, task lighting, and decorative lighting applications. Increased luminous efficacy and higher-power SMDs have allowed LED strip lights to be used in applications such as high brightness task lighting, fluorescent and halogen lighting fixture replacements, indirect lighting applications, Ultra Violet inspection during manufacturing processes, set and costume design, and even growing plants.'
         },
         'ua': {
-            'title': '',
-            'description': ''
-        }
-    },
-    'light-sensor': {
-        'en': {
-            'title': '',
-            'description': ''
-        },
-        'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Кольорова (RGB) світлодіодна стрічка',
+            'description': '\"Світлодіодна стрічка\" - джерело світла, зібране на основі світлодіодів. Являє собою гнучку друковану (монтажну) плату, на якій рівновіддалено один від одного розташовані світлодіоди. Зазвичай ширина стрічки становить 8 або 10 мм, товщина (зі світлодіодами) 2-3 мм. При виготовленні стрічка намотується в рулони відрізками по 5 м. Для обмеження струму через світлодіоди електричну схему стрічки вводяться струмообмежувальні (резистори), які також монтуються на стрічці.'
         }
     },
     'garage-door': {
         'en': {
-            'title': '',
-            'description': ''
+            'title': 'Garage door',
+            'description': 'This is garage door!'
         },
         'ua': {
-            'title': '',
-            'description': ''
+            'title': 'Двері гаража',
+            'description': 'Це гаражні двері!'
+        }
+    },
+
+    // тут вопрос, хз что писать в описании
+    'light-sensor': {
+        'en': {
+            'title': 'Light sensor',
+            'description': 'The light sensor measures its level and sends the result to the main server.'
+        },
+        'ua': {
+            'title': 'Датчик освітленості',
+            'description': 'Датчик освітленості, вимірює її рівень та надсилає результат до основного серверу.'
+        }
+    },
+    'solar-panel-voltage': {
+        'en': {
+            'title': 'Module for measuring current voltage',
+            'description': 'Measures the voltage on the solar panel.'
+        },
+        'ua': {
+            'title': 'Mодуль вимірювання напруги струму',
+            'description': 'Bимірює напругу на сонячній панелі'
+        }
+    },
+    'solar-panel-amperage': {
+        'en': {
+            'title': 'Module for measuring current amperage',
+            'description': 'Measure the power of the current amperage on the solar panel.'
+        },
+        'ua': {
+            'title': 'Модуль вимірювання сили струму',
+            'description': 'Вимірює силу струму на сонячній панелі.'
+        }
+    },
+    'global-voltage': {
+        'en': {
+            'title': 'Module for measuring current voltage',
+            'description': 'Measures the voltage globally.'
+        },
+        'ua': {
+            'title': 'Mодуль вимірювання напруги струму',
+            'description': 'Bимірює напругу на всій території.'
+        }
+    },
+    'global-amperage': {
+        'en': {
+            'title': 'Module for measuring current amperage',
+            'description': 'Measure the power of the current amperage globally.'
+        },
+        'ua': {
+            'title': 'Модуль вимірювання сили струму',
+            'description': 'Вимірює силу струму на всій території.'
         }
     },
 }
