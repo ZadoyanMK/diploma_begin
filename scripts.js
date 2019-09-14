@@ -359,8 +359,6 @@ function generate_field_texts(state) {
     }
 
     Object.keys(textBlockData).map( (ob) => {
-        console.log($('.' + ob).hasClass('disabled'))
-
         if ($.inArray(ob, ['en-lang', 'ua-lang']) == -1 ){
             $('.' + ob).hover( (e) => {
                 $('.' + ob).css({
