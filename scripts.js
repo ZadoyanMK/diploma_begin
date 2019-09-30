@@ -1,24 +1,4 @@
 const textBlockData = {
-  "en-lang": {
-    en: {
-      title: "English",
-      description: ""
-    },
-    ua: {
-      title: "Англійська",
-      description: ""
-    }
-  },
-  "ua-lang": {
-    en: {
-      title: "Ukrainian",
-      description: ""
-    },
-    ua: {
-      title: "Українська",
-      description: ""
-    }
-  },
   flower: {
     en: {
       title: "Flower",

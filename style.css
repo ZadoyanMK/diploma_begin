@@ -137,8 +137,8 @@
 
 /*colors(images)*/
 .flower {
-  top: -129%;
-  left: 80%;
+  top: -140%;
+  left: 78%;
   width: 12%;
   height: 14%;
   z-index: 1;
@@ -150,8 +150,8 @@
   background-size: 100% 100%;
 }
 .flower-humidity {
-  top: -142%;
-  left: 76%;
+  top: -152%;
+  left: 74%;
   width: 8%;
   height: 12%;
   z-index: 0;
@@ -168,8 +168,8 @@
 .arduino-nano:before {
   top: -35%;
   left: 22%;
-  width: 57%;
-  height: 170%;
+  width: 100%;
+  height: 300%;
   background: url("images/scheme_images/arduino-nano.png");
   background-size: 100% 100%;
 
@@ -179,10 +179,11 @@
 
 .rs485-ttl {
   /* background: rgb(151, 0, 189); */
+  top: 30%;
 }
 .rs485-ttl:before {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 230%;
   background: url("images/scheme_images/rs485-ttl.png");
   background-size: 100% 100%;
   /* 
@@ -296,38 +297,43 @@
   /* background: white; */
 }
 .wifi:before {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   background: url("images/scheme_images/wifi.png");
   background-size: 100% 100%;
 }
 
 .ds18b20 {
   /* background: whitesmoke; */
+  top: 60%;
 }
 .ds18b20:before {
-  width: 100%;
-  height: 100%;
+  width: 180%;
+  height: 150%;
+  /* margin-top: 70%; */
   background: url("images/scheme_images/ds18b20.png");
   background-size: 100% 100%;
 }
 
 .raspberry {
   /* background: green; */
+  top: 10%;
 }
 .raspberry:before {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   background: url("images/scheme_images/raspberry.png");
   background-size: 100% 100%;
 }
 
 .rs485-usb {
   /* background: greenyellow; */
+  top: 30%;
+  left: 200%;
 }
 .rs485-usb:before {
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   background: url("images/scheme_images/rs485-usb.png");
   background-size: 100% 100%;
 }
@@ -470,7 +476,7 @@
 
 /* lights block */
 .lights-block {
-  top: -134%;
+  top: -143%;
   left: 30%;
   width: 10%;
   height: 10%;
@@ -511,7 +517,7 @@
 /* ventilation */
 .ventilation-block {
   z-index: 0;
-  top: -144%;
+  top: -152.5%;
   left: 40.8%;
   width: 10%;
   height: 10%;
@@ -582,7 +588,7 @@
 
 /* door s90 pir */
 .door-s90-pir2-block {
-  top: -136.5%;
+  top: -145.5%;
   left: 22.5%;
   width: 15%;
   height: 2%;
@@ -613,22 +619,22 @@
 /* out of house */
 .reley {
   top: -160%;
-  left: 9%;
-  width: 8%;
-  height: 8%;
-  transform: rotate(-70deg);
-  -webkit-transform: rotate(-70deg);
+  left: 85%;
+  width: 13%;
+  height: 13%;
+  /* transform: rotate(-70deg);
+  -webkit-transform: rotate(-70deg); */
 }
 .mg135-air {
-  width: 8%;
-  height: 6%;
-  top: -88%;
-  left: 14%;
+  width: 15%;
+  height: 10%;
+  top: -164%;
+  left: 85%;
 }
 
 /* servo rfid block */
 .servo-rfid-block {
-  top: -108.5%;
+  top: -118%;
   left: 63%;
   width: 2.2%;
   height: 4%;
@@ -650,7 +656,7 @@
 
 /* window servo pir block */
 .window-servo-pir-block {
-  top: -114%;
+  top: -123%;
   left: 11%;
   width: 15%;
   height: 2%;
@@ -681,7 +687,7 @@
 
 /* windows */
 .window-second {
-  top: -117%;
+  top: -125%;
   left: 77.3%;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -691,7 +697,7 @@
 
 /* garage door block */
 .garage-input-block {
-  top: -171.9%;
+  top: -176.9%;
   width: 10%;
   height: 6%;
   left: 65%;
@@ -727,7 +733,7 @@
 
 /* main door sg90 */
 .main-door-servo-block {
-  top: -87.5%;
+  top: -92.5%;
   left: 44%;
   width: 8%;
   height: 2%;
@@ -749,10 +755,21 @@
 /* global amperage and voltage block */
 .global-amperage,
 .global-voltage {
-  height: 100%;
-  width: 25%;
-  float: left;
-  margin-left: 2%;
+  height: 170%;
+  width: 40%;
+  /* float: left;
+  margin-left: 2%; */
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  z-index: 10;
+}
+.global-amperage {
+  left: -80%;
+  top: -30%;
+}
+.global-voltage {
+  /* left: 100%; */
+  top: -200%;
 }
 .global-a-v-block {
   top: -66%;
@@ -766,27 +783,39 @@
   width: 7%;
   height: 45%;
   left: 51%;
-  top: -105%;
+  top: -120%;
 }
 .solar-panel {
-  height: 32%;
-  width: 100%;
-  float: left;
+  height: 80%;
+  width: 180%;
+  /* float: left; */
+  left: -80%;
+  top: 25%;
 }
 .solar-panel-amperage,
 .solar-panel-voltage {
-  height: 9%;
-  width: 20%;
-  margin-left: 2%;
-  float: left;
+  height: 25%;
+  width: 60%;
+  z-index: 10;
+  top: 0%;
+  left: 40%;
+
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+.solar-panel-amperage {
+  left: -30%;
+}
+.solar-panel-voltage {
+  top: 25%;
 }
 .sun-light {
-  width: 125%;
+  width: 280%;
   height: 3%;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
-  top: 23%;
-  left: 48%;
+  top: -65%;
+  left: -25%;
 }
 
 /* wi-fi block */
@@ -801,7 +830,7 @@
 .wifi-ds18b20-block {
   width: 8%;
   height: 8%;
-  left: 1%;
+  left: 3%;
   top: -36%;
 }
 
@@ -823,8 +852,8 @@
 
 /* arduino nano block */
 .arduino-nano {
-  height: 41%;
-  width: 100%;
+  height: 45%;
+  width: 120%;
 }
 .rs485-ttl {
   height: 20%;
@@ -836,68 +865,41 @@
 }
 .arduino-nano-rs485-block-1 {
   top: 5%;
-  left: 1%;
+  left: 3%;
 }
 .arduino-nano-rs485-block-2 {
   top: 8%;
-  left: 1%;
+  left: 3%;
 }
 .arduino-nano-rs485-block-3 {
   top: 12%;
-  left: 1%;
+  left: 3%;
 }
 .arduino-nano-rs485-block-4 {
   top: 18%;
-  left: 1%;
+  left: 3%;
 }
 .arduino-nano-rs485-block-5 {
-  top: -40%;
-  left: 90%;
+  top: -10%;
+  left: 86%;
 }
 .arduino-nano-rs485-block-6 {
-  top: -30%;
-  left: 90%;
+  top: -7%;
+  left: 86%;
 }
 .arduino-nano-rs485-block-7 {
-  top: -14%;
-  left: 90%;
+  top: -2%;
+  left: 86%;
 }
 .arduino-nano-rs485-block-8 {
-  top: -2%;
-  left: 90%;
+  top: 2%;
+  left: 89%;
 }
 
 /*language buttons*/
 .language-block {
-  top: -131%;
+  top: -160%;
   left: 46%;
   height: 4%;
   width: 7%;
-}
-.en-lang,
-.ua-lang {
-  width: 50%;
-  height: 100%;
-}
-.en-lang {
-  /* background: rgb(0, 255, 13); */
-  top: 0%;
-  left: 0%;
-}
-.ua-lang {
-  /* background: rgb(255, 72, 0); */
-  top: -100%;
-  left: 55%;
-}
-.en-lang:before {
-  width: 100%;
-  height: 100%;
-  background: url("images/en.jpg");
-  background-size: 100% 100%;
-}
-.ua-lang:before {
-  width: 100%;
-  height: 100%;
-  background: url("images/ua.gif");
-  background-size: 100% 100%;
 }
