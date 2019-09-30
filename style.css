@@ -931,3 +931,8 @@
   /* opacity: 0.3; */
   background: #428bca;
 }
+
+.schema-button {
+  width: 250px;
+  margin: 5px;
+}
