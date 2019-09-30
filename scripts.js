@@ -434,14 +434,10 @@ function generate_field_texts(state) {
   Object.keys(textBlockData).map(ob => {
     if ($.inArray(ob, ["en-lang", "ua-lang"]) == -1) {
       $("." + ob).hover(e => {
-        $("." + ob).css({
-          opacity: 1
-        });
+        $("." + ob).removeClass("highlit-item");
       });
       $("." + ob).mouseover(e => {
-        $("." + ob).css({
-          opacity: 0.6
-        });
+        $("." + ob).addClass("highlit-item");
       });
     }
 
@@ -479,4 +475,19 @@ function generate_field_texts(state) {
 
 $(document).ready(function() {
   generate_field_texts(1);
+  Object.keys(buttons).map(b => {
+    $("#" + b).click(e => {
+      let list = $("*[" + b + "]");
+      for (let i = 0; i < list.length; i++) {
+        mark(list[i]);
+      }
+      mark($(".raspberry"));
+    });
+  });
 });
+function mark(ob) {
+  $(ob).addClass("mark-items");
+  setTimeout(() => {
+    $(ob).removeClass("mark-items");
+  }, 1000);
+}
