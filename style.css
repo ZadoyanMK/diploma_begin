@@ -63,6 +63,7 @@
 .flower,
 .ventilation-recuperaptor,
 .en-lang,
+.flower-humidity,
 .ua-lang {
   display: block;
   position: relative;
@@ -121,6 +122,7 @@
 .light-sensor:before,
 .flower:before,
 .ventilation-recuperaptor:before,
+.flower-humidity:before,
 .en-lang:before,
 .ua-lang:before {
   content: "";
@@ -136,16 +138,28 @@
 /*colors(images)*/
 .flower {
   top: -129%;
-  left: 75%;
-  width: 20%;
-  height: 9%;
+  left: 80%;
+  width: 12%;
+  height: 14%;
+  z-index: 1;
 }
 .flower:before {
-  top: -35%;
-  left: 22%;
-  width: 57%;
-  height: 170%;
+  width: 100%;
+  height: 100%;
   background: url("images/scheme_images/flower.png");
+  background-size: 100% 100%;
+}
+.flower-humidity {
+  top: -142%;
+  left: 76%;
+  width: 8%;
+  height: 12%;
+  z-index: 0;
+}
+.flower-humidity:before {
+  width: 100%;
+  height: 100%;
+  background: url("images/scheme_images/flower-humidity.png");
   background-size: 100% 100%;
 }
 .arduino-nano {
