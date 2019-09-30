@@ -364,6 +364,49 @@ const textBlockData = {
   }
 };
 
+const buttons = {
+  "solar-station": {
+    en: "Solar station",
+    ua: "Сонячна станція"
+  },
+  "illumination-control": {
+    en: "Illumination control",
+    ua: "Керування освітленням"
+  },
+  "climate-control": {
+    en: "Climate control",
+    ua: "Клімат-контроль"
+  },
+  "access-control": {
+    en: "Access control",
+    ua: "Котроль доступу"
+  },
+  "safety-control": {
+    en: "Safety control",
+    ua: "Контроль безпеки"
+  },
+  "zone-control": {
+    en: "Zone control",
+    ua: "Контроль зони"
+  },
+  "presence-control": {
+    en: "Presence control",
+    ua: "Контроль присутності"
+  },
+  ventilation: {
+    en: "Ventilation",
+    ua: "Вентиляція"
+  },
+  "lightning-control": {
+    en: "Lightning control",
+    ua: "Контроль освітлености"
+  },
+  "cyber-security": {
+    en: "Cyber security",
+    ua: "Кібербезпека"
+  }
+};
+
 function disable(ob) {
   $(ob).addClass("disabled");
   $(ob).css({
@@ -380,14 +423,13 @@ function activate(ob) {
 
 function generate_field_texts(state) {
   let lang = "en";
-  disable(".en-lang");
-  activate(".ua-lang");
 
   if (state == 2) {
     lang = "ua";
-    activate(".en-lang");
-    disable(".ua-lang");
   }
+  Object.keys(buttons).map(ob => {
+    $("#" + ob).html(buttons[ob][lang]);
+  });
 
   Object.keys(textBlockData).map(ob => {
     if ($.inArray(ob, ["en-lang", "ua-lang"]) == -1) {
@@ -437,12 +479,4 @@ function generate_field_texts(state) {
 
 $(document).ready(function() {
   generate_field_texts(1);
-
-  $(".ua-lang").click(function(e) {
-    generate_field_texts(2);
-  });
-
-  $(".en-lang").click(function(e) {
-    generate_field_texts(1);
-  });
 });

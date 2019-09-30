@@ -15,7 +15,8 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container mt-5">
+      <!--Begin of schema-->
       <div
         class="modal fade"
         id="modalWindow"
@@ -157,6 +158,39 @@
         <div class="flower"></div>
         <div class="flower-humidity"></div>
       </div>
+
+      <div class="schema-buttons">
+        <button class="schema-button" id="solar-station">Solar station</button>
+        <button class="schema-button" id="illumination-control">
+          Illuminatipon control
+        </button>
+        <button class="schema-button" id="climate-control">
+          Climate control
+        </button>
+        <button class="schema-button" id="access-control">
+          Access control
+        </button>
+        <button class="schema-button" id="safety-control">
+          Safety control
+        </button>
+        <button class="schema-button" id="zone-control">Zone control</button>
+        <button class="schema-button" id="presence-control">
+          Presence control
+        </button>
+        <button class="schema-button" id="ventilation">Ventilation</button>
+        <button class="schema-button" id="lightning-control">
+          Lightning control
+        </button>
+        <button class="schema-button" id="cyber-security">
+          Cyber-security
+        </button>
+      </div>
+      <!--End of schema-->
+    </div>
+
+    <div>
+      <button onclick="generate_field_texts(1)">En</button>
+      <button onclick="generate_field_texts(2)">Ua</button>
     </div>
 
     <script
