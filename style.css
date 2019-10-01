@@ -30,6 +30,14 @@
 #text-description {
   /* float: left; */
 }
+.modal-header {
+  background: #428bca;
+  color: white;
+  border-radius: 0;
+}
+.close {
+  color: white;
+}
 
 .arduino-nano,
 .rs485-ttl,
@@ -137,8 +145,8 @@
 
 /*colors(images)*/
 .flower {
-  top: -140%;
-  left: 78%;
+  top: -135%;
+  left: 76%;
   width: 12%;
   height: 14%;
   z-index: 1;
@@ -150,7 +158,7 @@
   background-size: 100% 100%;
 }
 .flower-humidity {
-  top: -152%;
+  top: -148%;
   left: 74%;
   width: 8%;
   height: 12%;
@@ -159,7 +167,7 @@
 .flower-humidity:before {
   width: 100%;
   height: 100%;
-  background: url("images/scheme_images/flower-humidity.png");
+  background: url("images/scheme_images/fc28.png");
   background-size: 100% 100%;
 }
 .arduino-nano {
@@ -479,7 +487,7 @@
 
 /* lights block */
 .lights-block {
-  top: -143%;
+  top: -139%;
   left: 30%;
   width: 10%;
   height: 10%;
@@ -520,7 +528,7 @@
 /* ventilation */
 .ventilation-block {
   z-index: 0;
-  top: -152.5%;
+  top: -148.5%;
   left: 40.8%;
   width: 10%;
   height: 10%;
@@ -603,7 +611,7 @@
 
 /* door s90 pir */
 .door-s90-pir2-block {
-  top: -145.5%;
+  top: -140.5%;
   left: 22.5%;
   width: 15%;
   height: 2%;
@@ -633,23 +641,23 @@
 
 /* out of house */
 .reley {
-  top: -160%;
+  top: -163%;
   left: 85%;
-  width: 13%;
-  height: 13%;
+  width: 10%;
+  height: 10%;
   /* transform: rotate(-70deg);
   -webkit-transform: rotate(-70deg); */
 }
 .mg135-air {
-  width: 15%;
-  height: 10%;
-  top: -164%;
+  width: 10%;
+  height: 8%;
+  top: -168%;
   left: 85%;
 }
 
 /* servo rfid block */
 .servo-rfid-block {
-  top: -118%;
+  top: -112%;
   left: 63%;
   width: 2.2%;
   height: 4%;
@@ -671,7 +679,7 @@
 
 /* window servo pir block */
 .window-servo-pir-block {
-  top: -123%;
+  top: -120%;
   left: 11%;
   width: 15%;
   height: 2%;
@@ -718,7 +726,7 @@
 
 /* garage door block */
 .garage-input-block {
-  top: -176.9%;
+  top: -173.9%;
   width: 10%;
   height: 6%;
   left: 65%;
@@ -756,7 +764,7 @@
 
 /* main door sg90 */
 .main-door-servo-block {
-  top: -92.5%;
+  top: -89.5%;
   left: 44%;
   width: 8%;
   height: 2%;
@@ -796,7 +804,7 @@
 }
 .global-a-v-block {
   top: -66%;
-  left: 63%;
+  left: 56%;
   width: 12%;
   height: 8%;
 }
@@ -903,20 +911,20 @@
   left: 3%;
 }
 .arduino-nano-rs485-block-5 {
-  top: -10%;
+  top: -20%;
   left: 86%;
 }
 .arduino-nano-rs485-block-6 {
-  top: -7%;
+  top: -15%;
   left: 86%;
 }
 .arduino-nano-rs485-block-7 {
-  top: -2%;
+  top: -10%;
   left: 86%;
 }
 .arduino-nano-rs485-block-8 {
-  top: 2%;
-  left: 89%;
+  top: -5%;
+  left: 86%;
 }
 
 .highlit-item {

@@ -334,32 +334,38 @@ const textBlockData = {
   },
   "flower-humidity": {
     en: {
-      title: "Module humidity",
-      description: ""
+      title: "FC-28",
+      description:
+        "The FC28 Soil Moisture Sensor is a simple breakout for measuring the moisture in soil and similar materials. The soil moisture sensor is pretty straight forward to use. The two large exposed pads function as probes for the sensor, together acting as a variable resistor. The more water that is in the soil means the better the conductivity between the pads will be and will result in a lower resistance, and a higher SIG out. To get the FC28 Soil Moisture Sensor functioning all you will need is to connect the VCC and GND pins to your Microcontroller based device and you will receive a SIG out which will depend on the amount of water in the soil. One commonly known issue with soil moisture sensors is their short lifespan when exposed to a moist environment."
     },
     ua: {
-      title: "Модуль хумидити",
-      description: ""
+      title: "FC-28",
+      description:
+        "Датчик вологості FC28 - це простий пристрій для вимірювання вологи в ґрунті та подібних матеріалах. Дві великі відкриті колодки функціонують як датчики для датчика, разом виступаючи як змінний резистор. Чим більше води буде в ґрунті, тим краща провідність між колодками буде, і це призведе до зниження опору та вищого розміру. Щоб датчик вологості FC28 працював справно, все що вам знадобиться - це підключити штифти VCC та GND до пристрою на базі мікроконтролера, і ви отримаєте SIG, який залежатиме від кількості води в ґрунті. Однією з відомих проблем з датчиками вологості ґрунту є їх короткий термін експлуатації під впливом вологих середовищ."
     }
   },
   "laser-receiver": {
     en: {
-      title: "Receiver",
-      description: ""
+      title: "KY-018",
+      description:
+        "Arduino KY-018 Photoresistor module, used to measure light intensity. It can determine the presence or absence of light."
     },
     ua: {
-      title: "Лазер отримувач",
-      description: ""
+      title: "KY-018",
+      description:
+        "Модуль фоторезистора Arduino KY-018, що використовується для вимірювання інтенсивності світла. Він може визначити наявність або відсутність світла."
     }
   },
   laser: {
     en: {
-      title: "Laser",
-      description: ""
+      title: "KY-008",
+      description:
+        "Laser Transmitter module KY-008 for Arduino, emits a dot shaped, red laser beam."
     },
     ua: {
-      title: "Лазер",
-      description: ""
+      title: "KY-008",
+      description:
+        "Модуль лазерного передавача KY-008 для Arduino, випромінює червоний лазерний промінь у формі крапки."
     }
   }
 };
@@ -407,26 +413,13 @@ const buttons = {
   }
 };
 
-function disable(ob) {
-  $(ob).addClass("disabled");
-  $(ob).css({
-    opacity: 0.3
-  });
-}
-
-function activate(ob) {
-  $(ob).removeClass("disabled");
-  $(ob).css({
-    opacity: 1
-  });
-}
-
 function generate_field_texts(state) {
   let lang = "en";
 
   if (state == 2) {
     lang = "ua";
   }
+
   Object.keys(buttons).map(ob => {
     $("#" + ob).html(buttons[ob][lang]);
   });
@@ -473,21 +466,21 @@ function generate_field_texts(state) {
   });
 }
 
-$(document).ready(function() {
-  generate_field_texts(1);
-  Object.keys(buttons).map(b => {
-    $("#" + b).click(e => {
-      let list = $("*[" + b + "]");
-      for (let i = 0; i < list.length; i++) {
-        mark(list[i]);
-      }
-      mark($(".raspberry"));
-    });
-  });
-});
 function mark(ob) {
   $(ob).addClass("mark-items");
   setTimeout(() => {
     $(ob).removeClass("mark-items");
   }, 1000);
 }
+
+$(document).ready(function() {
+  generate_field_texts(1);
+
+  Object.keys(buttons).map(b => {
+    $("#" + b).click(e => {
+      let list = $("*[" + b + "]");
+      list.each(o => mark(list[o]));
+      mark($(".raspberry"));
+    });
+  });
+});
