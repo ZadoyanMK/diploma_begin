@@ -145,7 +145,7 @@
 
 /*colors(images)*/
 .flower {
-  top: -135%;
+  top: -130%;
   left: 76%;
   width: 12%;
   height: 14%;
@@ -487,7 +487,7 @@
 
 /* lights block */
 .lights-block {
-  top: -139%;
+  top: -135%;
   left: 30%;
   width: 10%;
   height: 10%;
@@ -507,28 +507,28 @@
   left: 90%;
 }
 .lights-block .light-sensor {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 65%;
 }
 .lights-block .light-sensor-1 {
   top: -107%;
   left: -10%;
-  height: 100%;
-  width: 100%;
+  /* height: 80%;
+  width: 100%; */
 }
 .lights-block .light-sensor-2 {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  top: -330%;
+  top: -280%;
   left: 255%;
-  width: 110%;
-  height: 80%;
+  /* width: 110%;
+  height: 80%; */
 }
 
 /* ventilation */
 .ventilation-block {
   z-index: 0;
-  top: -148.5%;
+  top: -144.5%;
   left: 40.8%;
   width: 10%;
   height: 10%;
@@ -551,11 +551,11 @@
     left: -200%;
 } */
 .air-pipe-2,
-.air-pipe-4,
-.dht22 {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+.air-pipe-4 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
+
 .air-pipe-2 {
   top: -270%;
   left: -235%;
@@ -572,8 +572,8 @@
   top: -64%;
 }
 .dht22 {
-  width: 60%;
-  height: 50%;
+  width: 50%;
+  height: 45%;
   left: -51%;
   top: -412%;
   transform: rotate(180deg);
@@ -589,29 +589,29 @@
   /* -webkit-transform: rotate(180deg); */
 }
 .ventilation-block .dht11 {
-  width: 25%;
-  height: 24%;
+  width: 60%;
+  height: 60%;
 }
 .ventilation-block .dht11-1 {
   top: -546%;
   left: -225%;
-  height: 80%;
-  width: 80%;
+  /* height: 80%; */
+  /* width: 80%; */
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
 }
 .ventilation-block .dht11-2 {
   top: -220%;
   left: 50%;
-  width: 88%;
-  height: 82%;
+  /* width: 88%; */
+  /* height: 82%; */
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
 }
 
 /* door s90 pir */
 .door-s90-pir2-block {
-  top: -140.5%;
+  top: -136.5%;
   left: 22.5%;
   width: 15%;
   height: 2%;
@@ -643,21 +643,21 @@
 .reley {
   top: -153%;
   left: 23%;
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
   /* transform: rotate(-70deg);
   -webkit-transform: rotate(-70deg); */
 }
 .mg135-air {
-  width: 10%;
-  height: 8%;
+  width: 8%;
+  height: 6%;
   top: -103%;
   left: 87%;
 }
 
 /* servo rfid block */
 .servo-rfid-block {
-  top: -112%;
+  top: -108%;
   left: 63%;
   width: 2.2%;
   height: 4%;
@@ -671,15 +671,16 @@
   -webkit-transform: rotate(100deg);
 }
 .rfid-rc522 {
-  height: 300%;
+  height: 250%;
+  width: 200%;
   left: 30%;
-  width: 250%;
+
   top: -60%;
 }
 
 /* window servo pir block */
 .window-servo-pir-block {
-  top: -120%;
+  top: -115%;
   left: 11%;
   width: 15%;
   height: 2%;
@@ -726,7 +727,7 @@
 
 /* garage door block */
 .garage-input-block {
-  top: -173.9%;
+  top: -172.5%;
   width: 10%;
   height: 6%;
   left: 65%;
@@ -764,7 +765,7 @@
 
 /* main door sg90 */
 .main-door-servo-block {
-  top: -89.5%;
+  top: -87.5%;
   left: 44%;
   width: 8%;
   height: 2%;
@@ -825,8 +826,8 @@
 }
 .solar-panel-amperage,
 .solar-panel-voltage {
-  height: 25%;
-  width: 70%;
+  height: 23%;
+  width: 60%;
   z-index: 10;
   top: 0%;
   left: 40%;
